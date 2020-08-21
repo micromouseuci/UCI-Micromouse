@@ -102,7 +102,7 @@ Text Label 3000 8900 0    50   ~ 0
 Text Label 3000 10200 0    50   ~ 0
 5v
 $Comp
-L Motor:Motor_DC M1
+L mouse_v2-rescue:Motor_DC-Motor M1
 U 1 1 5D1C3AFC
 P 1100 8900
 F 0 "M1" H 1258 8896 50  0000 L CNN
@@ -113,7 +113,7 @@ F 3 "~" H 1100 8810 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_DC M2
+L mouse_v2-rescue:Motor_DC-Motor M2
 U 1 1 5D1C3BC7
 P 1150 10150
 F 0 "M2" H 1308 10146 50  0000 L CNN
@@ -160,7 +160,7 @@ M2_encoder_B
 Text Label 3000 10100 0    50   ~ 0
 M2_encoder_A
 $Comp
-L Device:R R8
+L mouse_v2-rescue:R-Device R8
 U 1 1 5D1C60EA
 P 5800 1550
 F 0 "R8" H 5870 1596 50  0000 L CNN
@@ -171,7 +171,7 @@ F 3 "~" H 5800 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED:IRL81A D3
+L mouse_v2-rescue:IRL81A-LED D3
 U 1 1 5D1C62CE
 P 5800 1100
 F 0 "D3" V 5704 1252 50  0000 L CNN
@@ -184,7 +184,7 @@ $EndComp
 Wire Wire Line
 	1670 4310 2570 4310
 $Comp
-L Device:Q_Photo_NPN Q0
+L mouse_v2-rescue:Q_Photo_NPN-Device Q0
 U 1 1 5D1CEBFF
 P 1770 3960
 F 0 "Q0" H 1593 3914 50  0000 R CNN
@@ -195,7 +195,7 @@ F 3 "~" H 1770 3960 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Q_Photo_NPN Q1
+L mouse_v2-rescue:Q_Photo_NPN-Device Q1
 U 1 1 5D1CECAF
 P 2670 3960
 F 0 "Q1" H 2493 3914 50  0000 R CNN
@@ -206,7 +206,7 @@ F 3 "~" H 2670 3960 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Q_Photo_NPN Q2
+L mouse_v2-rescue:Q_Photo_NPN-Device Q2
 U 1 1 5D1CECF5
 P 3570 3960
 F 0 "Q2" H 3393 3914 50  0000 R CNN
@@ -217,7 +217,7 @@ F 3 "~" H 3570 3960 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Q_Photo_NPN Q3
+L mouse_v2-rescue:Q_Photo_NPN-Device Q3
 U 1 1 5D1CED3B
 P 4420 3960
 F 0 "Q3" H 4243 3914 50  0000 R CNN
@@ -245,7 +245,7 @@ Connection ~ 4320 4310
 Wire Wire Line
 	4320 4310 5370 4310
 $Comp
-L Device:R R1
+L mouse_v2-rescue:R-Device R1
 U 1 1 5D1D45B8
 P 1670 3360
 F 0 "R1" H 1740 3406 50  0000 L CNN
@@ -256,7 +256,7 @@ F 3 "~" H 1670 3360 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L mouse_v2-rescue:R-Device R2
 U 1 1 5D1D464D
 P 2570 3360
 F 0 "R2" H 2640 3406 50  0000 L CNN
@@ -267,7 +267,7 @@ F 3 "~" H 2570 3360 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L mouse_v2-rescue:R-Device R3
 U 1 1 5D1D46A2
 P 3470 3360
 F 0 "R3" H 3540 3406 50  0000 L CNN
@@ -278,7 +278,7 @@ F 3 "~" H 3470 3360 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L mouse_v2-rescue:R-Device R4
 U 1 1 5D1D46F2
 P 4320 3360
 F 0 "R4" H 4390 3406 50  0000 L CNN
@@ -374,7 +374,7 @@ M2_backward
 Text Label 8225 4650 3    50   ~ 0
 3.3v
 $Comp
-L Device:R R17
+L mouse_v2-rescue:R-Device R17
 U 1 1 5D2C4CD1
 P 8225 4500
 F 0 "R17" H 8295 4546 50  0000 L CNN
@@ -440,7 +440,7 @@ NoConn ~ 7600 2625
 Text Label 7600 2525 2    50   ~ 0
 GND
 $Comp
-L Device:Q_NMOS_DGS T3
+L mouse_v2-rescue:Q_NMOS_DGS-Device T3
 U 1 1 5E006E8C
 P 5700 2000
 F 0 "T3" H 5905 2046 50  0000 L CNN
@@ -457,7 +457,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 2000 5500 2400
 $Comp
-L Device:R R16
+L mouse_v2-rescue:R-Device R16
 U 1 1 5E013EDC
 P 5650 2400
 F 0 "R16" V 5443 2400 50  0000 C CNN
@@ -471,7 +471,7 @@ Connection ~ 5800 2400
 Wire Wire Line
 	5800 2400 5800 2600
 $Comp
-L Device:R R12
+L mouse_v2-rescue:R-Device R12
 U 1 1 5E0140CF
 P 5250 2000
 F 0 "R12" V 5043 2000 50  0000 C CNN
@@ -491,7 +491,7 @@ Wire Wire Line
 	5400 2000 5500 2000
 Connection ~ 5500 2000
 $Comp
-L Device:R R7
+L mouse_v2-rescue:R-Device R7
 U 1 1 5E01EC6A
 P 4300 1550
 F 0 "R7" H 4370 1596 50  0000 L CNN
@@ -502,7 +502,7 @@ F 3 "~" H 4300 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED:IRL81A D2
+L mouse_v2-rescue:IRL81A-LED D2
 U 1 1 5E01EC70
 P 4300 1100
 F 0 "D2" V 4204 1252 50  0000 L CNN
@@ -513,7 +513,7 @@ F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 4250 1100 50  0001
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS T2
+L mouse_v2-rescue:Q_NMOS_DGS-Device T2
 U 1 1 5E01EC76
 P 4200 2000
 F 0 "T2" H 4405 2046 50  0000 L CNN
@@ -528,7 +528,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 2000 4000 2400
 $Comp
-L Device:R R15
+L mouse_v2-rescue:R-Device R15
 U 1 1 5E01EC7F
 P 4150 2400
 F 0 "R15" V 3943 2400 50  0000 C CNN
@@ -542,7 +542,7 @@ Connection ~ 4300 2400
 Wire Wire Line
 	4300 2400 4300 2600
 $Comp
-L Device:R R11
+L mouse_v2-rescue:R-Device R11
 U 1 1 5E01EC87
 P 3750 2000
 F 0 "R11" V 3543 2000 50  0000 C CNN
@@ -562,7 +562,7 @@ Wire Wire Line
 	3900 2000 4000 2000
 Connection ~ 4000 2000
 $Comp
-L Device:R R5
+L mouse_v2-rescue:R-Device R5
 U 1 1 5E02C7EF
 P 1300 1550
 F 0 "R5" H 1370 1596 50  0000 L CNN
@@ -573,7 +573,7 @@ F 3 "~" H 1300 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED:IRL81A D0
+L mouse_v2-rescue:IRL81A-LED D0
 U 1 1 5E02C7F5
 P 1300 1100
 F 0 "D0" V 1204 1252 50  0000 L CNN
@@ -584,7 +584,7 @@ F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 1250 1100 50  0001
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS T0
+L mouse_v2-rescue:Q_NMOS_DGS-Device T0
 U 1 1 5E02C7FB
 P 1200 2000
 F 0 "T0" H 1405 2046 50  0000 L CNN
@@ -599,7 +599,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 2000 1000 2400
 $Comp
-L Device:R R13
+L mouse_v2-rescue:R-Device R13
 U 1 1 5E02C804
 P 1150 2400
 F 0 "R13" V 943 2400 50  0000 C CNN
@@ -613,7 +613,7 @@ Connection ~ 1300 2400
 Wire Wire Line
 	1300 2400 1300 2600
 $Comp
-L Device:R R9
+L mouse_v2-rescue:R-Device R9
 U 1 1 5E02C80C
 P 750 2000
 F 0 "R9" V 543 2000 50  0000 C CNN
@@ -633,7 +633,7 @@ Wire Wire Line
 	900  2000 1000 2000
 Connection ~ 1000 2000
 $Comp
-L Device:R R6
+L mouse_v2-rescue:R-Device R6
 U 1 1 5E0358B1
 P 2800 1550
 F 0 "R6" H 2870 1596 50  0000 L CNN
@@ -644,7 +644,7 @@ F 3 "~" H 2800 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED:IRL81A D1
+L mouse_v2-rescue:IRL81A-LED D1
 U 1 1 5E0358B7
 P 2800 1100
 F 0 "D1" V 2704 1252 50  0000 L CNN
@@ -655,7 +655,7 @@ F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 2750 1100 50  0001
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS T1
+L mouse_v2-rescue:Q_NMOS_DGS-Device T1
 U 1 1 5E0358BD
 P 2700 2000
 F 0 "T1" H 2905 2046 50  0000 L CNN
@@ -670,7 +670,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 2000 2500 2400
 $Comp
-L Device:R R14
+L mouse_v2-rescue:R-Device R14
 U 1 1 5E0358C6
 P 2650 2400
 F 0 "R14" V 2443 2400 50  0000 C CNN
@@ -684,7 +684,7 @@ Connection ~ 2800 2400
 Wire Wire Line
 	2800 2400 2800 2600
 $Comp
-L Device:R R10
+L mouse_v2-rescue:R-Device R10
 U 1 1 5E0358CE
 P 2250 2000
 F 0 "R10" V 2043 2000 50  0000 C CNN
@@ -752,7 +752,7 @@ F 8 "SN754410NE" H 5400 9400 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C2
+L mouse_v2-rescue:CP1_Small-Device C2
 U 1 1 5E0B1B16
 P 4200 8700
 F 0 "C2" H 4100 8650 50  0000 R CNN
@@ -763,7 +763,7 @@ F 3 "~" H 4200 8700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:CP1_Small C3
+L mouse_v2-rescue:CP1_Small-Device C3
 U 1 1 5E0B1E54
 P 4200 9000
 F 0 "C3" H 4000 9050 50  0000 L CNN
@@ -788,7 +788,7 @@ GND
 Text Label 4200 9100 3    50   ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Male J4
+L mouse_v2-rescue:Conn_01x02_Male-Connector J4
 U 1 1 5E60A04C
 P 5550 7250
 F 0 "J4" H 5656 7428 50  0000 C CNN
@@ -819,7 +819,7 @@ F 12 "Active" H 5975 7175 60  0001 L CNN "Status"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Battery_Cell BT1
+L mouse_v2-rescue:Battery_Cell-Device BT1
 U 1 1 5E820C97
 P 4000 6950
 F 0 "BT1" H 3750 7050 50  0000 L CNN
@@ -830,7 +830,7 @@ F 3 "~" V 4000 7010 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C10
+L mouse_v2-rescue:CP1-Device C10
 U 1 1 5E8B972D
 P 5275 6525
 F 0 "C10" H 5390 6571 50  0000 L CNN
@@ -843,7 +843,7 @@ $EndComp
 Text Label 9800 3225 0    50   ~ 0
 5v
 $Comp
-L Mechanical:MountingHole SK1
+L mouse_v2-rescue:MountingHole-Mechanical SK1
 U 1 1 5E799FC8
 P 2000 5550
 F 0 "SK1" H 2100 5596 50  0000 L CNN
@@ -854,7 +854,7 @@ F 3 "~" H 2000 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole MH2
+L mouse_v2-rescue:MountingHole-Mechanical MH2
 U 1 1 5E79A0A3
 P 1175 5575
 F 0 "MH2" H 1275 5621 50  0000 L CNN
@@ -865,7 +865,7 @@ F 3 "~" H 1175 5575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole MH1
+L mouse_v2-rescue:MountingHole-Mechanical MH1
 U 1 1 5E79A15B
 P 1175 5175
 F 0 "MH1" H 1275 5221 50  0000 L CNN
@@ -876,7 +876,7 @@ F 3 "~" H 1175 5175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole SK2
+L mouse_v2-rescue:MountingHole-Mechanical SK2
 U 1 1 5E79A200
 P 2000 5175
 F 0 "SK2" H 2100 5221 50  0000 L CNN
@@ -887,7 +887,7 @@ F 3 "~" H 2000 5175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:LM1084-5.0 U3
+L mouse_v2-rescue:LM1084-5.0-Regulator_Linear U3
 U 1 1 5E7860F1
 P 4650 6375
 F 0 "U3" H 4650 6617 50  0000 C CNN
@@ -915,7 +915,7 @@ Connection ~ 5275 6375
 Wire Wire Line
 	5275 6375 5450 6375
 $Comp
-L Device:CP1 C9
+L mouse_v2-rescue:CP1-Device C9
 U 1 1 5E79A9AD
 P 4225 5950
 F 0 "C9" H 4340 5996 50  0000 L CNN
@@ -969,7 +969,7 @@ Wire Notes Line
 Wire Notes Line
 	10500 5100 6800 5100
 $Comp
-L dk_Pushbutton-Switches:GPTS203211B S2
+L mouse_v2-rescue:GPTS203211B-dk_Pushbutton-Switches S2
 U 1 1 5F1E60A3
 P 7800 4350
 F 0 "S2" H 7800 4625 50  0000 C CNN
@@ -1015,7 +1015,7 @@ $EndComp
 NoConn ~ 9800 3325
 NoConn ~ 9800 3425
 $Comp
-L Device:Buzzer BZ1
+L mouse_v2-rescue:Buzzer-Device BZ1
 U 1 1 5F35DDB2
 P 1075 6775
 F 0 "BZ1" H 1228 6804 50  0000 L CNN
@@ -1026,7 +1026,7 @@ F 3 "~" V 1050 6875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D4
+L mouse_v2-rescue:LED-Device D4
 U 1 1 5F361454
 P 2150 6300
 F 0 "D4" H 2141 6516 50  0000 C CNN
@@ -1037,7 +1037,7 @@ F 3 "~" H 2150 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R19
+L mouse_v2-rescue:R-Device R19
 U 1 1 5F367A92
 P 2425 6550
 F 0 "R19" H 2495 6596 50  0000 L CNN
@@ -1056,7 +1056,7 @@ Wire Wire Line
 Wire Wire Line
 	2425 6300 2300 6300
 $Comp
-L Device:LED D5
+L mouse_v2-rescue:LED-Device D5
 U 1 1 5F396452
 P 2150 6825
 F 0 "D5" H 2141 7041 50  0000 C CNN
@@ -1067,7 +1067,7 @@ F 3 "~" H 2150 6825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R20
+L mouse_v2-rescue:R-Device R20
 U 1 1 5F396459
 P 2425 7075
 F 0 "R20" H 2495 7121 50  0000 L CNN
@@ -1082,7 +1082,7 @@ Wire Wire Line
 Wire Wire Line
 	2425 6825 2300 6825
 $Comp
-L Device:LED D6
+L mouse_v2-rescue:LED-Device D6
 U 1 1 5F399A50
 P 2150 7350
 F 0 "D6" H 2141 7566 50  0000 C CNN
@@ -1093,7 +1093,7 @@ F 3 "~" H 2150 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R21
+L mouse_v2-rescue:R-Device R21
 U 1 1 5F399A57
 P 2425 7600
 F 0 "R21" H 2495 7646 50  0000 L CNN
@@ -1136,7 +1136,7 @@ Wire Wire Line
 Text Label 1800 7725 3    50   ~ 0
 GND
 $Comp
-L Device:R R18
+L mouse_v2-rescue:R-Device R18
 U 1 1 5F3C1532
 P 975 7150
 F 0 "R18" H 905 7104 50  0000 R CNN

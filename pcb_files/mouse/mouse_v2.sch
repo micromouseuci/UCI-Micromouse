@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:mouse_v2-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1020,7 +1019,7 @@ U 1 1 5F35DDB2
 P 1075 6775
 F 0 "BZ1" H 1228 6804 50  0000 L CNN
 F 1 "Buzzer" H 1228 6713 50  0000 L CNN
-F 2 "misc:9x5.5mm Buzzer" V 1050 6875 50  0001 C CNN
+F 2 "custom:CST-931AP_buzzer" V 1050 6875 50  0001 C CNN
 F 3 "~" V 1050 6875 50  0001 C CNN
 	1    1075 6775
 	0    -1   -1   0   
