@@ -77,9 +77,9 @@ Wire Wire Line
 	4550 10050 4550 10100
 Text Label 4400 10050 2    50   ~ 0
 GND
-Text Label 7600 1425 2    50   ~ 0
+Text Label 7600 2225 2    50   ~ 0
 M1_speed
-Text Label 7600 1525 2    50   ~ 0
+Text Label 7600 1625 2    50   ~ 0
 M2_speed
 Text Label 6100 8800 0    50   ~ 0
 OUT1
@@ -349,27 +349,27 @@ Text Label 5370 3010 0    50   ~ 0
 GND
 Text Label 9800 3525 0    50   ~ 0
 Reciever_0
-Text Label 7600 3625 2    50   ~ 0
+Text Label 7600 3525 2    50   ~ 0
 Reciever_1
-Text Label 7600 2925 2    50   ~ 0
+Text Label 7600 2825 2    50   ~ 0
 Reciever_2
-Text Label 7600 3125 2    50   ~ 0
+Text Label 7600 3425 2    50   ~ 0
 Reciever_3
 Text Label 9800 3625 0    50   ~ 0
 Emitter_0
-Text Label 7600 3525 2    50   ~ 0
+Text Label 7600 3625 2    50   ~ 0
 Emitter_1
-Text Label 7600 3025 2    50   ~ 0
+Text Label 7600 2925 2    50   ~ 0
 Emitter_2
-Text Label 7600 3225 2    50   ~ 0
+Text Label 7600 3325 2    50   ~ 0
 Emitter_3
-Text Label 7600 1125 2    50   ~ 0
+Text Label 7600 2125 2    50   ~ 0
 M1_forward
-Text Label 7600 1025 2    50   ~ 0
+Text Label 7600 1925 2    50   ~ 0
 M1_backward
-Text Label 7600 1225 2    50   ~ 0
+Text Label 7600 1725 2    50   ~ 0
 M2_forward
-Text Label 7600 1325 2    50   ~ 0
+Text Label 7600 1825 2    50   ~ 0
 M2_backward
 Text Label 8225 4650 3    50   ~ 0
 3.3v
@@ -402,18 +402,18 @@ Wire Wire Line
 	8275 4225 8275 4125
 Wire Wire Line
 	8275 4125 8450 4125
-Text Label 7600 1825 2    50   ~ 0
+Text Label 7600 3225 2    50   ~ 0
 M1_encoder_A
-Text Label 7600 1925 2    50   ~ 0
+Text Label 7600 3125 2    50   ~ 0
 M1_encoder_B
-Text Label 7600 1725 2    50   ~ 0
+Text Label 7600 1125 2    50   ~ 0
 M2_encoder_A
-Text Label 7600 1625 2    50   ~ 0
+Text Label 7600 1025 2    50   ~ 0
 M2_encoder_B
 NoConn ~ 9800 1025
 NoConn ~ 9800 1125
 NoConn ~ 9800 1225
-Text Label 7600 2225 2    50   ~ 0
+Text Label 7600 3025 2    50   ~ 0
 PUSH_SW
 Text Label 7600 925  2    50   ~ 0
 GND
@@ -1156,12 +1156,12 @@ Wire Wire Line
 	1175 6975 1175 6875
 Wire Wire Line
 	1175 6975 1350 6975
-Text Label 7600 3425 2    50   ~ 0
+Text Label 7600 1425 2    50   ~ 0
 LED_3
-Text Label 7600 3325 2    50   ~ 0
+Text Label 7600 1325 2    50   ~ 0
 LED_2
-Text Label 7600 2825 2    50   ~ 0
+Text Label 7600 1525 2    50   ~ 0
 LED_1
-Text Label 7600 2125 2    50   ~ 0
+Text Label 7600 1225 2    50   ~ 0
 Buzzer
 $EndSCHEMATC
