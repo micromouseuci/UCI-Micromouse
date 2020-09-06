@@ -365,11 +365,11 @@ Text Label 7600 3325 2    50   ~ 0
 Emitter_3
 Text Label 7600 2125 2    50   ~ 0
 M1_forward
-Text Label 7600 1925 2    50   ~ 0
+Text Label 7600 1825 2    50   ~ 0
 M1_backward
 Text Label 7600 1725 2    50   ~ 0
 M2_forward
-Text Label 7600 1825 2    50   ~ 0
+Text Label 7600 1925 2    50   ~ 0
 M2_backward
 Text Label 8225 4650 3    50   ~ 0
 3.3v
@@ -1007,7 +1007,7 @@ U 1 1 5F23AD3B
 P 8700 2275
 F 0 "U1" H 8700 3890 50  0000 C CNN
 F 1 "Teensy4.0" H 8700 3799 50  0000 C CNN
-F 2 "teensy:Teensy40" H 8300 2475 50  0001 C CNN
+F 2 "teensy:Teensy40(nopads)" H 8300 2475 50  0001 C CNN
 F 3 "" H 8300 2475 50  0001 C CNN
 	1    8700 2275
 	1    0    0    -1  
