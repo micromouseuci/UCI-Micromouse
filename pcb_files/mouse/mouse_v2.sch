@@ -39,8 +39,6 @@ Text Label 7600 2425 2    50   ~ 0
 3.3v
 Text Label 4100 8800 2    50   ~ 0
 5v
-Text Label 4100 8900 2    50   ~ 0
-5v
 Text Label 4700 9100 2    50   ~ 0
 M1_speed
 Text Label 4700 9200 2    50   ~ 0
@@ -163,7 +161,7 @@ L mouse_v2-rescue:R-Device R8
 U 1 1 5D1C60EA
 P 5800 1550
 F 0 "R8" H 5870 1596 50  0000 L CNN
-F 1 "33" H 5870 1505 50  0000 L CNN
+F 1 "35" H 5870 1505 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5730 1550 50  0001 C CNN
 F 3 "~" H 5800 1550 50  0001 C CNN
 	1    5800 1550
@@ -385,16 +383,17 @@ F 3 "~" H 8225 4500 50  0001 C CNN
 $EndComp
 Text Label 7475 4350 2    50   ~ 0
 GND
-Text Label 5750 7350 0    50   ~ 0
+Text Label 4525 7725 0    50   ~ 0
 vBatt
-Text Label 5750 7250 0    50   ~ 0
+Text Label 4525 7625 0    50   ~ 0
 GND
-Text Label 8450 4125 0    50   ~ 0
+Text Label 9350 4225 0    50   ~ 0
 PUSH_SW
 Wire Wire Line
 	8225 4350 8100 4350
 Wire Wire Line
 	8100 4350 8100 4225
+<<<<<<< Updated upstream
 Wire Wire Line
 	8100 4225 8275 4225
 Wire Wire Line
@@ -402,6 +401,9 @@ Wire Wire Line
 Wire Wire Line
 	8275 4125 8450 4125
 Text Label 7600 1825 2    50   ~ 0
+=======
+Text Label 7600 3225 2    50   ~ 0
+>>>>>>> Stashed changes
 M1_encoder_A
 Text Label 7600 1925 2    50   ~ 0
 M1_encoder_B
@@ -494,7 +496,7 @@ L mouse_v2-rescue:R-Device R7
 U 1 1 5E01EC6A
 P 4300 1550
 F 0 "R7" H 4370 1596 50  0000 L CNN
-F 1 "33" H 4370 1505 50  0000 L CNN
+F 1 "35" H 4370 1505 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 1550 50  0001 C CNN
 F 3 "~" H 4300 1550 50  0001 C CNN
 	1    4300 1550
@@ -565,7 +567,7 @@ L mouse_v2-rescue:R-Device R5
 U 1 1 5E02C7EF
 P 1300 1550
 F 0 "R5" H 1370 1596 50  0000 L CNN
-F 1 "33" H 1370 1505 50  0000 L CNN
+F 1 "35" H 1370 1505 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1230 1550 50  0001 C CNN
 F 3 "~" H 1300 1550 50  0001 C CNN
 	1    1300 1550
@@ -636,7 +638,7 @@ L mouse_v2-rescue:R-Device R6
 U 1 1 5E0358B1
 P 2800 1550
 F 0 "R6" H 2870 1596 50  0000 L CNN
-F 1 "33" H 2870 1505 50  0000 L CNN
+F 1 "35" H 2870 1505 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2730 1550 50  0001 C CNN
 F 3 "~" H 2800 1550 50  0001 C CNN
 	1    2800 1550
@@ -761,27 +763,11 @@ F 3 "~" H 4200 8700 50  0001 C CNN
 	1    4200 8700
 	-1   0    0    1   
 $EndComp
-$Comp
-L mouse_v2-rescue:CP1_Small-Device C3
-U 1 1 5E0B1E54
-P 4200 9000
-F 0 "C3" H 4000 9050 50  0000 L CNN
-F 1 "1.0uF" H 3900 8950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4200 9000 50  0001 C CNN
-F 3 "~" H 4200 9000 50  0001 C CNN
-	1    4200 9000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 8800 4200 8800
-Wire Wire Line
-	4100 8900 4200 8900
 Connection ~ 4200 8800
 Wire Wire Line
 	4200 8800 4100 8800
-Connection ~ 4200 8900
-Wire Wire Line
-	4200 8900 4700 8900
 Text Label 4200 8600 2    50   ~ 0
 GND
 Text Label 4200 9100 3    50   ~ 0
@@ -789,54 +775,54 @@ GND
 $Comp
 L mouse_v2-rescue:Conn_01x02_Male-Connector J4
 U 1 1 5E60A04C
-P 5550 7250
-F 0 "J4" H 5656 7428 50  0000 C CNN
-F 1 "I2C_Conn" H 5650 7350 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5550 7250 50  0001 C CNN
-F 3 "~" H 5550 7250 50  0001 C CNN
-	1    5550 7250
+P 4325 7625
+F 0 "J4" H 4431 7803 50  0000 C CNN
+F 1 "I2C_Conn" H 4425 7725 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4325 7625 50  0001 C CNN
+F 3 "~" H 4325 7625 50  0001 C CNN
+	1    4325 7625
 	1    0    0    -1  
 $EndComp
 $Comp
 L mouse-rescue:EG1218-dk_Slide-Switches S1
 U 1 1 5E819689
-P 5775 5975
-F 0 "S1" H 5775 6254 50  0000 C CNN
-F 1 "EG1218" H 5775 6163 50  0000 C CNN
-F 2 "misc:SWITCH_SLIDE_500SSP1S2M2QEA" H 5975 6175 50  0001 L CNN
-F 3 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 5975 6275 60  0001 L CNN
-F 4 "EG1903-ND" H 5975 6375 60  0001 L CNN "Digi-Key_PN"
-F 5 "EG1218" H 5975 6475 60  0001 L CNN "MPN"
-F 6 "Switches" H 5975 6575 60  0001 L CNN "Category"
-F 7 "Slide Switches" H 5975 6675 60  0001 L CNN "Family"
-F 8 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 5975 6775 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/e-switch/EG1218/EG1903-ND/101726" H 5975 6875 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH SLIDE SPDT 200MA 30V" H 5975 6975 60  0001 L CNN "Description"
-F 11 "E-Switch" H 5975 7075 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5975 7175 60  0001 L CNN "Status"
-	1    5775 5975
+P 6150 5925
+F 0 "S1" H 6150 6204 50  0000 C CNN
+F 1 "EG1218" H 6150 6113 50  0000 C CNN
+F 2 "misc:SWITCH_SLIDE_500SSP1S2M2QEA" H 6350 6125 50  0001 L CNN
+F 3 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 6350 6225 60  0001 L CNN
+F 4 "EG1903-ND" H 6350 6325 60  0001 L CNN "Digi-Key_PN"
+F 5 "EG1218" H 6350 6425 60  0001 L CNN "MPN"
+F 6 "Switches" H 6350 6525 60  0001 L CNN "Category"
+F 7 "Slide Switches" H 6350 6625 60  0001 L CNN "Family"
+F 8 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 6350 6725 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/e-switch/EG1218/EG1903-ND/101726" H 6350 6825 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH SLIDE SPDT 200MA 30V" H 6350 6925 60  0001 L CNN "Description"
+F 11 "E-Switch" H 6350 7025 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6350 7125 60  0001 L CNN "Status"
+	1    6150 5925
 	-1   0    0    1   
 $EndComp
 $Comp
 L mouse_v2-rescue:Battery_Cell-Device BT1
 U 1 1 5E820C97
-P 4000 6950
-F 0 "BT1" H 3750 7050 50  0000 L CNN
-F 1 "Battery_Cell" H 3450 6950 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 4000 7010 50  0001 C CNN
-F 3 "~" V 4000 7010 50  0001 C CNN
-	1    4000 6950
+P 4375 6900
+F 0 "BT1" H 4125 7000 50  0000 L CNN
+F 1 "Battery_Cell" H 3825 6900 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 4375 6960 50  0001 C CNN
+F 3 "~" V 4375 6960 50  0001 C CNN
+	1    4375 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L mouse_v2-rescue:CP1-Device C10
 U 1 1 5E8B972D
-P 5275 6525
-F 0 "C10" H 5390 6571 50  0000 L CNN
-F 1 "10uF(Tantalum)" H 5390 6480 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5275 6525 50  0001 C CNN
-F 3 "~" H 5275 6525 50  0001 C CNN
-	1    5275 6525
+P 5650 6475
+F 0 "C10" H 5765 6521 50  0000 L CNN
+F 1 "10uF(Tantalum)" H 5765 6430 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5650 6475 50  0001 C CNN
+F 3 "~" H 5650 6475 50  0001 C CNN
+	1    5650 6475
 	1    0    0    -1  
 $EndComp
 Text Label 9800 3225 0    50   ~ 0
@@ -888,62 +874,55 @@ $EndComp
 $Comp
 L mouse_v2-rescue:LM1084-5.0-Regulator_Linear U3
 U 1 1 5E7860F1
-P 4650 6375
-F 0 "U3" H 4650 6617 50  0000 C CNN
-F 1 "LM1085-5.0" H 4650 6526 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 4650 6625 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 4650 6375 50  0001 C CNN
-	1    4650 6375
+P 5025 6325
+F 0 "U3" H 5025 6567 50  0000 C CNN
+F 1 "LM1085-5.0" H 5025 6476 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 5025 6575 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 5025 6325 50  0001 C CNN
+	1    5025 6325
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 6675 4650 6925
-Text Label 4650 6925 3    50   ~ 0
+	5025 6625 5025 6875
+Text Label 5025 6875 3    50   ~ 0
 GND
 Wire Wire Line
-	4950 6375 5275 6375
-Text Label 5975 5975 0    50   ~ 0
+	5325 6325 5650 6325
+Text Label 6350 5925 0    50   ~ 0
 5v
-Text Label 4000 7050 3    50   ~ 0
+Text Label 4375 7000 3    50   ~ 0
 GND
 Wire Wire Line
-	4000 6750 4000 6525
+	4725 6325 4600 6325
+Connection ~ 5650 6325
 Wire Wire Line
-	4350 6375 4225 6375
-Connection ~ 5275 6375
-Wire Wire Line
-	5275 6375 5450 6375
+	5650 6325 5825 6325
 $Comp
 L mouse_v2-rescue:CP1-Device C9
 U 1 1 5E79A9AD
-P 4225 5950
-F 0 "C9" H 4340 5996 50  0000 L CNN
-F 1 "10uF" H 4340 5905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4225 5950 50  0001 C CNN
-F 3 "~" H 4225 5950 50  0001 C CNN
-	1    4225 5950
+P 4600 5900
+F 0 "C9" H 4375 5850 50  0000 L CNN
+F 1 "10uF" H 4325 5925 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4600 5900 50  0001 C CNN
+F 3 "~" H 4600 5900 50  0001 C CNN
+	1    4600 5900
 	-1   0    0    1   
 $EndComp
-Text Label 4225 5800 0    50   ~ 0
+Text Label 4675 5675 0    50   ~ 0
 GND
 Wire Wire Line
-	4225 6100 4225 6375
-Connection ~ 4225 6375
-Wire Wire Line
-	4000 6525 3775 6525
-Connection ~ 4000 6525
-Wire Wire Line
-	4000 6525 4000 6375
-Text Label 3775 6525 2    50   ~ 0
+	4600 6050 4600 6325
+Connection ~ 4600 6325
+Text Label 3475 6325 2    50   ~ 0
 vBatt
-Text Label 5275 6675 3    50   ~ 0
+Text Label 5650 6625 3    50   ~ 0
 GND
 Wire Wire Line
-	4000 6375 4225 6375
+	4375 6325 4600 6325
 Wire Wire Line
-	5575 6075 5450 6075
+	5950 6025 5825 6025
 Wire Wire Line
-	5450 6075 5450 6375
+	5825 6025 5825 6325
 Text Notes 6750 4850 2    79   ~ 0
 Emittter/Reciver Pairs\n
 Text Notes 6700 11150 2    79   ~ 0
@@ -992,12 +971,12 @@ Wire Wire Line
 Wire Wire Line
 	8000 4350 8100 4350
 Connection ~ 8100 4350
-Text Label 5400 5775 2    50   ~ 0
+Text Label 5775 5725 2    50   ~ 0
 VUSB
 Wire Wire Line
-	5575 5875 5400 5875
+	5950 5825 5775 5825
 Wire Wire Line
-	5400 5875 5400 5775
+	5775 5825 5775 5725
 Text Label 9800 3125 0    50   ~ 0
 VUSB
 $Comp
@@ -1163,4 +1142,96 @@ Text Label 7600 2825 2    50   ~ 0
 LED_1
 Text Label 7600 2125 2    50   ~ 0
 Buzzer
+Text Label 4100 8900 2    50   ~ 0
+vBatt
+Wire Wire Line
+	4700 8900 4100 8900
+$Comp
+L Device:CP1 C3
+U 1 1 5F6935C5
+P 4125 5900
+F 0 "C3" H 4010 5854 50  0000 R CNN
+F 1 "100mF" H 4010 5945 50  0000 R CNN
+F 2 "" H 4125 5900 50  0001 C CNN
+F 3 "~" H 4125 5900 50  0001 C CNN
+	1    4125 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5F697D50
+P 3650 5900
+F 0 "C1" H 3535 5854 50  0000 R CNN
+F 1 "100mF" H 3535 5945 50  0000 R CNN
+F 2 "" H 3650 5900 50  0001 C CNN
+F 3 "~" H 3650 5900 50  0001 C CNN
+	1    3650 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 5750 4600 5675
+Wire Wire Line
+	4600 5675 4675 5675
+Text Notes 3450 7825 0    50   ~ 0
+What is the point of having this extra connection?\n
+Wire Wire Line
+	4375 6325 4375 6700
+Connection ~ 4375 6325
+Connection ~ 4600 5675
+Wire Wire Line
+	3650 6050 3650 6325
+Wire Wire Line
+	3475 6325 3650 6325
+Connection ~ 3650 6325
+Wire Wire Line
+	4125 6050 4125 6325
+Wire Wire Line
+	3650 6325 4125 6325
+Connection ~ 4125 6325
+Wire Wire Line
+	4125 6325 4375 6325
+Wire Wire Line
+	3650 5675 3650 5750
+Wire Wire Line
+	4125 5750 4125 5675
+Wire Wire Line
+	3650 5675 4125 5675
+Connection ~ 4125 5675
+Wire Wire Line
+	4125 5675 4600 5675
+$Comp
+L Device:CP1 C?
+U 1 1 5F742694
+P 9000 4450
+F 0 "C?" H 9115 4496 50  0000 L CNN
+F 1 "10uF" H 9115 4405 50  0000 L CNN
+F 2 "" H 9000 4450 50  0001 C CNN
+F 3 "~" H 9000 4450 50  0001 C CNN
+	1    9000 4450
+	1    0    0    -1  
+$EndComp
+Text Label 9000 4650 3    50   ~ 0
+GND
+Wire Wire Line
+	9000 4300 9000 4225
+Wire Wire Line
+	9000 4225 9350 4225
+Wire Wire Line
+	9000 4650 9000 4600
+$Comp
+L mouse_v2-rescue:R-Device R?
+U 1 1 5F779962
+P 8500 4225
+F 0 "R?" H 8570 4271 50  0000 L CNN
+F 1 "R_DIS" H 8570 4180 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8430 4225 50  0001 C CNN
+F 3 "~" H 8500 4225 50  0001 C CNN
+	1    8500 4225
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8350 4225 8100 4225
+Wire Wire Line
+	8650 4225 9000 4225
+Connection ~ 9000 4225
 $EndSCHEMATC
