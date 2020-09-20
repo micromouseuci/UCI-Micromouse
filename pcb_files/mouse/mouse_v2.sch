@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:mouse_v2-cache
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -74,9 +75,9 @@ Wire Wire Line
 	4550 10050 4550 10100
 Text Label 4400 10050 2    50   ~ 0
 GND
-Text Label 7600 1425 2    50   ~ 0
+Text Label 7600 2225 2    50   ~ 0
 M1_speed
-Text Label 7600 1525 2    50   ~ 0
+Text Label 7600 1625 2    50   ~ 0
 M2_speed
 Text Label 6100 8800 0    50   ~ 0
 OUT1
@@ -172,7 +173,7 @@ L mouse_v2-rescue:IRL81A-LED D3
 U 1 1 5D1C62CE
 P 5800 1100
 F 0 "D3" V 5704 1252 50  0000 L CNN
-F 1 "IRL81A" V 5795 1252 50  0000 L CNN
+F 1 "SFH4545" V 5795 1252 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm" H 5800 1275 50  0001 C CNN
 F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 5750 1100 50  0001 C CNN
 	1    5800 1100
@@ -246,7 +247,7 @@ L mouse_v2-rescue:R-Device R1
 U 1 1 5D1D45B8
 P 1670 3360
 F 0 "R1" H 1740 3406 50  0000 L CNN
-F 1 "R" H 1740 3315 50  0000 L CNN
+F 1 "1.8k" H 1740 3315 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1600 3360 50  0001 C CNN
 F 3 "~" H 1670 3360 50  0001 C CNN
 	1    1670 3360
@@ -257,7 +258,7 @@ L mouse_v2-rescue:R-Device R2
 U 1 1 5D1D464D
 P 2570 3360
 F 0 "R2" H 2640 3406 50  0000 L CNN
-F 1 "R" H 2640 3315 50  0000 L CNN
+F 1 "1.8k" H 2640 3315 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2500 3360 50  0001 C CNN
 F 3 "~" H 2570 3360 50  0001 C CNN
 	1    2570 3360
@@ -268,7 +269,7 @@ L mouse_v2-rescue:R-Device R3
 U 1 1 5D1D46A2
 P 3470 3360
 F 0 "R3" H 3540 3406 50  0000 L CNN
-F 1 "R" H 3540 3315 50  0000 L CNN
+F 1 "1.8k" H 3540 3315 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3400 3360 50  0001 C CNN
 F 3 "~" H 3470 3360 50  0001 C CNN
 	1    3470 3360
@@ -279,7 +280,7 @@ L mouse_v2-rescue:R-Device R4
 U 1 1 5D1D46F2
 P 4320 3360
 F 0 "R4" H 4390 3406 50  0000 L CNN
-F 1 "R" H 4390 3315 50  0000 L CNN
+F 1 "1.8k" H 4390 3315 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4250 3360 50  0001 C CNN
 F 3 "~" H 4320 3360 50  0001 C CNN
 	1    4320 3360
@@ -346,27 +347,27 @@ Text Label 5370 3010 0    50   ~ 0
 GND
 Text Label 9800 3525 0    50   ~ 0
 Reciever_0
-Text Label 7600 3625 2    50   ~ 0
+Text Label 7600 3525 2    50   ~ 0
 Reciever_1
-Text Label 7600 2925 2    50   ~ 0
+Text Label 7600 2825 2    50   ~ 0
 Reciever_2
-Text Label 7600 3125 2    50   ~ 0
+Text Label 7600 3425 2    50   ~ 0
 Reciever_3
 Text Label 9800 3625 0    50   ~ 0
 Emitter_0
-Text Label 7600 3525 2    50   ~ 0
+Text Label 7600 3625 2    50   ~ 0
 Emitter_1
-Text Label 7600 3025 2    50   ~ 0
+Text Label 7600 2925 2    50   ~ 0
 Emitter_2
-Text Label 7600 3225 2    50   ~ 0
+Text Label 7600 3325 2    50   ~ 0
 Emitter_3
-Text Label 7600 1125 2    50   ~ 0
+Text Label 7600 2125 2    50   ~ 0
 M1_forward
-Text Label 7600 1025 2    50   ~ 0
+Text Label 7600 1825 2    50   ~ 0
 M1_backward
-Text Label 7600 1225 2    50   ~ 0
+Text Label 7600 1725 2    50   ~ 0
 M2_forward
-Text Label 7600 1325 2    50   ~ 0
+Text Label 7600 1925 2    50   ~ 0
 M2_backward
 Text Label 8225 4650 3    50   ~ 0
 3.3v
@@ -387,34 +388,24 @@ Text Label 4525 7725 0    50   ~ 0
 vBatt
 Text Label 4525 7625 0    50   ~ 0
 GND
-Text Label 9350 4225 0    50   ~ 0
+Text Label 8350 4225 0    50   ~ 0
 PUSH_SW
 Wire Wire Line
 	8225 4350 8100 4350
 Wire Wire Line
 	8100 4350 8100 4225
-<<<<<<< Updated upstream
-Wire Wire Line
-	8100 4225 8275 4225
-Wire Wire Line
-	8275 4225 8275 4125
-Wire Wire Line
-	8275 4125 8450 4125
-Text Label 7600 1825 2    50   ~ 0
-=======
 Text Label 7600 3225 2    50   ~ 0
->>>>>>> Stashed changes
 M1_encoder_A
-Text Label 7600 1925 2    50   ~ 0
+Text Label 7600 3125 2    50   ~ 0
 M1_encoder_B
-Text Label 7600 1725 2    50   ~ 0
+Text Label 7600 1125 2    50   ~ 0
 M2_encoder_A
-Text Label 7600 1625 2    50   ~ 0
+Text Label 7600 1025 2    50   ~ 0
 M2_encoder_B
 NoConn ~ 9800 1025
 NoConn ~ 9800 1125
 NoConn ~ 9800 1225
-Text Label 7600 2225 2    50   ~ 0
+Text Label 7600 3025 2    50   ~ 0
 PUSH_SW
 Text Label 7600 925  2    50   ~ 0
 GND
@@ -446,7 +437,7 @@ U 1 1 5E006E8C
 P 5700 2000
 F 0 "T3" H 5905 2046 50  0000 L CNN
 F 1 "Q_NMOS_DGS" H 5905 1955 50  0000 L CNN
-F 2 "misc:TN0104(TO-92)" H 5900 2100 50  0001 C CNN
+F 2 "misc:TN0104(TO-92)v2" H 5900 2100 50  0001 C CNN
 F 3 "~" H 5700 2000 50  0001 C CNN
 	1    5700 2000
 	1    0    0    -1  
@@ -507,7 +498,7 @@ L mouse_v2-rescue:IRL81A-LED D2
 U 1 1 5E01EC70
 P 4300 1100
 F 0 "D2" V 4204 1252 50  0000 L CNN
-F 1 "IRL81A" V 4295 1252 50  0000 L CNN
+F 1 "SFH4545" V 4295 1252 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm" H 4300 1275 50  0001 C CNN
 F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 4250 1100 50  0001 C CNN
 	1    4300 1100
@@ -519,7 +510,7 @@ U 1 1 5E01EC76
 P 4200 2000
 F 0 "T2" H 4405 2046 50  0000 L CNN
 F 1 "Q_NMOS_DGS" H 4405 1955 50  0000 L CNN
-F 2 "misc:TN0104(TO-92)" H 4400 2100 50  0001 C CNN
+F 2 "misc:TN0104(TO-92)v2" H 4400 2100 50  0001 C CNN
 F 3 "~" H 4200 2000 50  0001 C CNN
 	1    4200 2000
 	1    0    0    -1  
@@ -578,7 +569,7 @@ L mouse_v2-rescue:IRL81A-LED D0
 U 1 1 5E02C7F5
 P 1300 1100
 F 0 "D0" V 1204 1252 50  0000 L CNN
-F 1 "IRL81A" V 1295 1252 50  0000 L CNN
+F 1 "SFH4545" V 1295 1252 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm" H 1300 1275 50  0001 C CNN
 F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 1250 1100 50  0001 C CNN
 	1    1300 1100
@@ -590,7 +581,7 @@ U 1 1 5E02C7FB
 P 1200 2000
 F 0 "T0" H 1405 2046 50  0000 L CNN
 F 1 "Q_NMOS_DGS" H 1405 1955 50  0000 L CNN
-F 2 "misc:TN0104(TO-92)" H 1400 2100 50  0001 C CNN
+F 2 "misc:TN0104(TO-92)v2" H 1400 2100 50  0001 C CNN
 F 3 "~" H 1200 2000 50  0001 C CNN
 	1    1200 2000
 	1    0    0    -1  
@@ -649,7 +640,7 @@ L mouse_v2-rescue:IRL81A-LED D1
 U 1 1 5E0358B7
 P 2800 1100
 F 0 "D1" V 2704 1252 50  0000 L CNN
-F 1 "IRL81A" V 2795 1252 50  0000 L CNN
+F 1 "SFH4545" V 2795 1252 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm" H 2800 1275 50  0001 C CNN
 F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 2750 1100 50  0001 C CNN
 	1    2800 1100
@@ -661,7 +652,7 @@ U 1 1 5E0358BD
 P 2700 2000
 F 0 "T1" H 2905 2046 50  0000 L CNN
 F 1 "Q_NMOS_DGS" H 2905 1955 50  0000 L CNN
-F 2 "misc:TN0104(TO-92)" H 2900 2100 50  0001 C CNN
+F 2 "misc:TN0104(TO-92)v2" H 2900 2100 50  0001 C CNN
 F 3 "~" H 2700 2000 50  0001 C CNN
 	1    2700 2000
 	1    0    0    -1  
@@ -769,8 +760,6 @@ Connection ~ 4200 8800
 Wire Wire Line
 	4200 8800 4100 8800
 Text Label 4200 8600 2    50   ~ 0
-GND
-Text Label 4200 9100 3    50   ~ 0
 GND
 $Comp
 L mouse_v2-rescue:Conn_01x02_Male-Connector J4
@@ -985,7 +974,7 @@ U 1 1 5F23AD3B
 P 8700 2275
 F 0 "U1" H 8700 3890 50  0000 C CNN
 F 1 "Teensy4.0" H 8700 3799 50  0000 C CNN
-F 2 "teensy:Teensy40" H 8300 2475 50  0001 C CNN
+F 2 "teensy:Teensy40(nopads)" H 8300 2475 50  0001 C CNN
 F 3 "" H 8300 2475 50  0001 C CNN
 	1    8700 2275
 	1    0    0    -1  
@@ -998,7 +987,7 @@ U 1 1 5F35DDB2
 P 1075 6775
 F 0 "BZ1" H 1228 6804 50  0000 L CNN
 F 1 "Buzzer" H 1228 6713 50  0000 L CNN
-F 2 "custom:CST-931AP_buzzer" V 1050 6875 50  0001 C CNN
+F 2 "misc:9x5.5mm Buzzer" V 1050 6875 50  0001 C CNN
 F 3 "~" V 1050 6875 50  0001 C CNN
 	1    1075 6775
 	0    -1   -1   0   
@@ -1134,13 +1123,13 @@ Wire Wire Line
 	1175 6975 1175 6875
 Wire Wire Line
 	1175 6975 1350 6975
-Text Label 7600 3425 2    50   ~ 0
+Text Label 7600 1425 2    50   ~ 0
 LED_3
-Text Label 7600 3325 2    50   ~ 0
+Text Label 7600 1325 2    50   ~ 0
 LED_2
-Text Label 7600 2825 2    50   ~ 0
+Text Label 7600 1525 2    50   ~ 0
 LED_1
-Text Label 7600 2125 2    50   ~ 0
+Text Label 7600 1225 2    50   ~ 0
 Buzzer
 Text Label 4100 8900 2    50   ~ 0
 vBatt
@@ -1151,8 +1140,8 @@ L Device:CP1 C3
 U 1 1 5F6935C5
 P 4125 5900
 F 0 "C3" H 4010 5854 50  0000 R CNN
-F 1 "100mF" H 4010 5945 50  0000 R CNN
-F 2 "" H 4125 5900 50  0001 C CNN
+F 1 "100uF" H 4010 5945 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm" H 4125 5900 50  0001 C CNN
 F 3 "~" H 4125 5900 50  0001 C CNN
 	1    4125 5900
 	-1   0    0    1   
@@ -1162,8 +1151,8 @@ L Device:CP1 C1
 U 1 1 5F697D50
 P 3650 5900
 F 0 "C1" H 3535 5854 50  0000 R CNN
-F 1 "100mF" H 3535 5945 50  0000 R CNN
-F 2 "" H 3650 5900 50  0001 C CNN
+F 1 "100uF" H 3535 5945 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm" H 3650 5900 50  0001 C CNN
 F 3 "~" H 3650 5900 50  0001 C CNN
 	1    3650 5900
 	-1   0    0    1   
@@ -1172,8 +1161,6 @@ Wire Wire Line
 	4600 5750 4600 5675
 Wire Wire Line
 	4600 5675 4675 5675
-Text Notes 3450 7825 0    50   ~ 0
-What is the point of having this extra connection?\n
 Wire Wire Line
 	4375 6325 4375 6700
 Connection ~ 4375 6325
@@ -1199,39 +1186,6 @@ Wire Wire Line
 Connection ~ 4125 5675
 Wire Wire Line
 	4125 5675 4600 5675
-$Comp
-L Device:CP1 C?
-U 1 1 5F742694
-P 9000 4450
-F 0 "C?" H 9115 4496 50  0000 L CNN
-F 1 "10uF" H 9115 4405 50  0000 L CNN
-F 2 "" H 9000 4450 50  0001 C CNN
-F 3 "~" H 9000 4450 50  0001 C CNN
-	1    9000 4450
-	1    0    0    -1  
-$EndComp
-Text Label 9000 4650 3    50   ~ 0
-GND
-Wire Wire Line
-	9000 4300 9000 4225
-Wire Wire Line
-	9000 4225 9350 4225
-Wire Wire Line
-	9000 4650 9000 4600
-$Comp
-L mouse_v2-rescue:R-Device R?
-U 1 1 5F779962
-P 8500 4225
-F 0 "R?" H 8570 4271 50  0000 L CNN
-F 1 "R_DIS" H 8570 4180 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8430 4225 50  0001 C CNN
-F 3 "~" H 8500 4225 50  0001 C CNN
-	1    8500 4225
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8350 4225 8100 4225
-Wire Wire Line
-	8650 4225 9000 4225
-Connection ~ 9000 4225
 $EndSCHEMATC
