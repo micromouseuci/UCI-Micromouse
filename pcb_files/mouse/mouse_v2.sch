@@ -349,7 +349,7 @@ Text Label 9800 3525 0    50   ~ 0
 Reciever_0
 Text Label 7600 3525 2    50   ~ 0
 Reciever_1
-Text Label 7600 2825 2    50   ~ 0
+Text Label 7600 2925 2    50   ~ 0
 Reciever_2
 Text Label 7600 3425 2    50   ~ 0
 Reciever_3
@@ -357,7 +357,7 @@ Text Label 9800 3625 0    50   ~ 0
 Emitter_0
 Text Label 7600 3625 2    50   ~ 0
 Emitter_1
-Text Label 7600 2925 2    50   ~ 0
+Text Label 7600 2825 2    50   ~ 0
 Emitter_2
 Text Label 7600 3325 2    50   ~ 0
 Emitter_3
