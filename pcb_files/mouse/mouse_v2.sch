@@ -1134,7 +1134,7 @@ Buzzer
 Text Label 4100 8900 2    50   ~ 0
 vBatt
 Wire Wire Line
-	4700 8900 4100 8900
+	4700 8900 4200 8900
 $Comp
 L Device:CP1 C3
 U 1 1 5F6935C5
@@ -1188,4 +1188,20 @@ Wire Wire Line
 	4125 5675 4600 5675
 Wire Wire Line
 	8350 4225 8100 4225
+$Comp
+L Device:CP1_Small C4
+U 1 1 5F6B2E72
+P 4200 9000
+F 0 "C4" H 4000 9050 50  0000 L CNN
+F 1 "1uF" H 3975 8975 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4200 9000 50  0001 C CNN
+F 3 "~" H 4200 9000 50  0001 C CNN
+	1    4200 9000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 8900
+Wire Wire Line
+	4200 8900 4100 8900
+Text Label 4200 9100 3    50   ~ 0
+GND
 $EndSCHEMATC
