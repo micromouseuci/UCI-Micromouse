@@ -1,5 +1,5 @@
-int emitterPin = 29; // Pin number of the emitter (Change to what pin you are using)
-int receiverPin = 30; // Pin number of the receiver (Change to what pin you are using)
+int emitterPin = 3; // Pin number of the emitter (Change to what pin you are using)
+int receiverPin = 4; // Pin number of the receiver (Change to what pin you are using)
 
 void setup() {
   // put your setup code here, to run once:
