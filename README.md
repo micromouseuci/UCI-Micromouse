@@ -27,7 +27,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 * __...Ω__ _(R11)_ - Pull Up resistor for switch. Value based on the LED bought. [Calculate](http://www.ohmslawcalculator.com/led-resistor-calculator)
 * __1-10kΩ__ _(R8, R9)_ - Current limiting resistors for LEDs.
 
-
+### Other Resources
 
 
  
