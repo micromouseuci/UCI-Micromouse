@@ -9,7 +9,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  * [__Official Club Website__](https://micromouseuci.github.io/) - Get updates on club meetings and club information
  * [__Micromouse @UCI Team Drive__](https://drive.google.com/drive/folders/1fHwfOaCsH3-F_LZoAcfiGgn9cWiebsPj) - Reference Sheets, Lecture Slides, and more informative documents
  * [__YouTube Playlist (Coming Soon...)__] - Official Micromouse@UCI playlist that includes helpful video references on a wide range of subjects, ranging from soldering and safety to PID control and ChibiOS
-
+ 
 <h2> Parts and Labels</h2>
 
 * [__SN754410NE__](https://www.digikey.com/product-detail/en/texas-instruments/SN754410NE/296-9911-5-ND/380180) _(U2)_ - Motor driver, used to control the speed and direction of the two motors.
