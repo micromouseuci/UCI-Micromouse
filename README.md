@@ -11,7 +11,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  * [__YouTube Playlist__](https://www.youtube.com/playlist?list=PLTnmBeaLzeHIIcfAZqYvjoWuxOcVnpV9Z) - Official Micromouse@UCI playlist that includes helpful video references on a wide range of subjects, ranging from soldering and safety to PID control and ChibiOS
  
  <details>
- <summary>Schematic Reference</summary>
+ <summary><strong>Schematic Reference</strong></summary>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/Schematic.PNG">
  
 * [__SN754410NE__](https://www.digikey.com/product-detail/en/texas-instruments/SN754410NE/296-9911-5-ND/380180) _(U2)_ - Motor driver, used to control the speed and direction of the two motors.
@@ -33,8 +33,8 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
  
 <details>
-<summary>Soldering Components</summary>
- <ul><details><summary>IR Emitters and Receivers</summary>
+ <summary><strong>Soldering Components</strong></summary>
+ <ul><details><summary><strong>IR Emitters and Receivers</strong></summary>
   <br> <li>On the schematic, the IR Emitters are labeled as D0, D1, D2, and D3. Find the corresponding labels on the PCB. They should be at the front of the board</li>
   <li>Place the shorter end of the emitter in the positive throughole of the corresponding pad and the longer end through the negative side. For reference, the D0 pad is shown below.</li>
   <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/emitter-receiver_holes.jpg" width=200 height=400>
