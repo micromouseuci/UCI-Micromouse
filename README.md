@@ -44,8 +44,13 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
   </details></ul>
 </details>
  
+<details>
+<summary><strong>Testing</strong></summary>
+</details>
  
- 
+<details>
+<summary><strong>Software</strong></summary>
+</details>
  
 
 ### Other Resources
