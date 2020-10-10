@@ -75,7 +75,6 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
 <details>
 <summary><strong>Software</strong></summary>
- ### Software Notes
 
 #### Interrupts
 
