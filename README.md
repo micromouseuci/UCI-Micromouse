@@ -13,6 +13,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
  <details>
  <summary><strong>Schematic Reference</strong></summary>
+ <p>This is the schematic for Micromouse at UCI's PCB. The parts are listed below the image, with the labels in parentheses. Below the labels are further explanations of each circuit so that you can get an understanding of how each circuit works and why we included them in the PCB</p>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/Schematic.PNG">
  
 * [__SN754410NE__](https://www.digikey.com/product-detail/en/texas-instruments/SN754410NE/296-9911-5-ND/380180) _(U2)_ - Motor driver, used to control the speed and direction of the two motors.
@@ -29,6 +30,22 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 * __35Ω__ _(R5, R6, R7, R8)_ - Current limiting resistor for Recievers.
 * __47kΩ__ _(R13, R14, R15, R16)_ - Pull Up resistor for switch. Value based on the LED bought. [Calculate](http://www.ohmslawcalculator.com/led-resistor-calculator)
 * __1kΩ__ _(R9, R10, R11, R12)_ - Resistors for MOSFET gate
+
+ <details>
+ <summary><strong>Emitter/Receiver Pair Circuit</strong></summary>
+ </details>
+ 
+ <details>
+ <summary><strong>Power Supply Circuit</strong></summary>
+ </details>
+
+ <details>
+ <summary><strong>Motor Control Circuit</strong></summary>
+ </details>
+
+ <details>
+ <summary><strong>Indicator Circuit</strong></summary>
+ </details>
 
  </details>
  
