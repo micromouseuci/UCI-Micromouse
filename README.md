@@ -11,10 +11,12 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  * [__YouTube Playlist (Coming Soon...)__] - Official Micromouse@UCI playlist that includes helpful video references on a wide range of subjects, ranging from soldering and safety to PID control and ChibiOS
  
  
-<details open>
+<details>
 <summary>Soldering Components</summary>
 <br>
-Well, you asked for it!
+<li>
+ <p>Sensors</p>
+ </li>
 </details>
  
 <h2> Parts and Labels</h2>
