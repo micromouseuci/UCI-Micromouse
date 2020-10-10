@@ -34,6 +34,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
 <details>
  <summary><strong>Soldering Components</strong></summary>
+ 
  <ul><details><summary><strong>IR Emitters and Receivers</strong></summary>
   <br> <li>On the schematic, the IR Emitters are labeled as D0, D1, D2, and D3. Find the corresponding labels on the PCB. They should be at the front of the board</li>
   <li>Place the shorter end of the emitter in the positive throughole of the corresponding pad and the longer end through the negative side. For reference, the D0 pad is shown below.</li>
@@ -42,6 +43,14 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
   <li>Repeat the same process for the IR Receivers. The receivers are located right next to the emitters, and are labelled as Q0, Q1, Q2, and Q3. For the receivers, the short end is also the positive end</li>
   <li>When you're soldering the components, make sure that the LEDs line up with the sillhouettes as much as possible. In other words, the length of the leads above the PCB should be as short as possible. This will ensure that one receiver from one set will not have interference from an emitter of another set. </li>
   </details></ul>
+ 
+ <ul><details><summary>Motors and Encoders</summary>
+ <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/motor_parts.jpg" width=50 height=200>
+ 
+ 
+ 
+ </details></ul>
+ 
 </details>
  
 <details>
