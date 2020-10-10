@@ -44,8 +44,8 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
   <li>When you're soldering the components, make sure that the LEDs line up with the sillhouettes as much as possible. In other words, the length of the leads above the PCB should be as short as possible. This will ensure that one receiver from one set will not have interference from an emitter of another set. </li>
   </details></ul>
  
- <ul><details><summary>Motors and Encoders</summary>
- <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/motor_parts.jpg" width=50 height=200>
+ <ul><details><summary><strong>Motors and Encoders</strong></summary>
+ <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/motor_parts.jpg" width=200 height=300>
  
  
  
