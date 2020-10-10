@@ -40,10 +40,13 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
   <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/emitter-receiver_holes.jpg" width=200 height=400>
   <li>After inserting the emitter all the way, bend the emitter's leads so that the emitter lines up parallel to the PCB AND it is centered on the emitter sillhouette on the PCB. You can now solder the emitter. </li>
   <li>Repeat the same process for the IR Receivers. The receivers are located right next to the emitters, and are labelled as Q0, Q1, Q2, and Q3. For the receivers, the short end is also the positive end</li>
+  <li>When you're soldering the components, make sure that the LEDs line up with the sillhouettes as much as possible. In other words, the length of the leads above the PCB should be as short as possible. This will ensure that one receiver from one set will not have interference from an emitter of another set. </li>
   </details></ul>
 </details>
  
-<h2> Parts and Labels</h2>
+ 
+ 
+ 
 
 ### Other Resources
 
