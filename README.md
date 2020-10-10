@@ -11,24 +11,9 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  * [__YouTube Playlist__](https://www.youtube.com/playlist?list=PLTnmBeaLzeHIIcfAZqYvjoWuxOcVnpV9Z) - Official Micromouse@UCI playlist that includes helpful video references on a wide range of subjects, ranging from soldering and safety to PID control and ChibiOS
  
  <details>
- <summary>Schematic Reference</summary>
+ <summary><strong>Schematic Reference</strong></summary>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/Schematic.PNG">
- </details>
  
- 
-<details>
-<summary>Soldering Components</summary>
- <ul><details><summary>IR Emitters and Receivers</summary>
-  <br> <li>On the schematic, the IR Emitters are labeled as D0, D1, D2, and D3. Find the corresponding labels on the PCB. They should be at the front of the board</li>
-  <li>Place the shorter end of the emitter in the positive throughole of the corresponding pad and the longer end through the negative side. For reference, the D0 pad is shown below.</li>
-  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/emitter-receiver_holes.jpg">
-  <li>After inserting the emitter all the way, bend the emitter's leads so that the emitter lines up parallel to the PCB AND it is centered on the emitter sillhouette on the PCB. You can now solder the emitter. </li>
-  <li>Repeat the same process for the IR Receivers. The receivers are located right next to the emitters, and are labelled as Q0, Q1, Q2, and Q3. For the receivers, the short end is also the positive end</li>
-  </details></ul>
-</details>
- 
-<h2> Parts and Labels</h2>
-
 * [__SN754410NE__](https://www.digikey.com/product-detail/en/texas-instruments/SN754410NE/296-9911-5-ND/380180) _(U2)_ - Motor driver, used to control the speed and direction of the two motors.
 * [__Teensy 3.2__](https://www.pjrc.com/teensy/teensy31.html) _(U1)_- Processor, will run code.
 * [__IR Emitters__]() _(D0-D3)_ - Send an IR signal, which will bounce off walls, allowing for the reciever to read. Each is connected to a digital pin on the Teensy, allowing them to individual turn on and off.
@@ -39,10 +24,34 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 * [__Buzzer__](https://www.amazon.com/BETAFPV-Terminals-Electronic-Continuous-12X9-5mm/dp/B073RH8TQK) _(BZ1)_ - ~5mm buzzer pin spacing, the small ones in the link fit.
 * [__LEDs__](http://www.google.com/search?q=3528+smd+led) _(D4, D5)_ - Any 3528 sized led rated for at least 3.3v
 * [__Voltage Regulator (Linear)__](https://www.digikey.com/product-detail/en/stmicroelectronics/LD1085V50/497-3436-5-ND/669220) - Used to step voltage down
-* __120Ω__ _(R0, R1, R2, R3)_ - Current limiting resistors for Emitters.
-* __1.8KΩ__ _(R4, R5, R6, R7)_ - Current limiting resistor for Recievers.
-* __...Ω__ _(R11)_ - Pull Up resistor for switch. Value based on the LED bought. [Calculate](http://www.ohmslawcalculator.com/led-resistor-calculator)
-* __1-10kΩ__ _(R8, R9)_ - Current limiting resistors for LEDs.
+* __1.8KΩ__ _(R1, R2, R3, R4)_ - Current limiting resistors for Receivers.
+* __35Ω__ _(R5, R6, R7, R8)_ - Current limiting resistor for Recievers.
+* __47kΩ__ _(R13, R14, R15, R16)_ - Pull Up resistor for switch. Value based on the LED bought. [Calculate](http://www.ohmslawcalculator.com/led-resistor-calculator)
+* __1kΩ__ _(R9, R10, R11, R12)_ - Resistors for MOSFET gate
+
+ </details>
+ 
+ 
+<details>
+ <summary><strong>Soldering Components</strong></summary>
+ <ul><details><summary><strong>IR Emitters and Receivers</strong></summary>
+  <br> <li>On the schematic, the IR Emitters are labeled as D0, D1, D2, and D3. Find the corresponding labels on the PCB. They should be at the front of the board</li>
+  <li>Place the shorter end of the emitter in the positive throughole of the corresponding pad and the longer end through the negative side. For reference, the D0 pad is shown below.</li>
+  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/emitter-receiver_holes.jpg" width=200 height=400>
+  <li>After inserting the emitter all the way, bend the emitter's leads so that the emitter lines up parallel to the PCB AND it is centered on the emitter sillhouette on the PCB. You can now solder the emitter. </li>
+  <li>Repeat the same process for the IR Receivers. The receivers are located right next to the emitters, and are labelled as Q0, Q1, Q2, and Q3. For the receivers, the short end is also the positive end</li>
+  <li>When you're soldering the components, make sure that the LEDs line up with the sillhouettes as much as possible. In other words, the length of the leads above the PCB should be as short as possible. This will ensure that one receiver from one set will not have interference from an emitter of another set. </li>
+  </details></ul>
+</details>
+ 
+<details>
+<summary><strong>Testing</strong></summary>
+</details>
+ 
+<details>
+<summary><strong>Software</strong></summary>
+</details>
+ 
 
 ### Other Resources
 
