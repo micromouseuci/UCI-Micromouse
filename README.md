@@ -13,8 +13,11 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
 <details>
 <summary>Soldering Components</summary>
-<br>
- <ul><details><summary>IR Emitters and Receivers</summary></details></ul>
+<br> Make sure you have the KiCAD schematic open on your computer, as it will be referenced throughout this tutorial. 
+ <ul><details><summary>IR Emitters and Receivers</summary>
+  <br> <ul>On the schematic, the IR Emitters are labeled as D0, D1, D2, and D3. Find the corresponding labels on the PCB. They should be at the front of the board</ul>
+  <ul>Place the shorter end of the emitter in the positive throughole of the corresponding pad. For reference, the D0 pad is shown below.</ul>
+  </details></ul>
 </details>
  
 <h2> Parts and Labels</h2>
