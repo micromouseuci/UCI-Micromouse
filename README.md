@@ -49,8 +49,10 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <ul>The image above shows all the components you will need to install your motor to your PCB.</ul>
  <ul>The first step is to attach the JST connector (the wires) to the encoder. The encoder is the mini black circuit board with a connecter pin for the JST.</ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/encoders_jst.jpg" width=200 height=300>
- <ul>Soldering the encoders to the motor will require some thinking and engineering skills on your part. Place the encoder on the motor using the image below as reference. You will need to cover those holes with solder while also making sure that the motor pins are touching the solder. This way, the motor pins are electrically connected to the encoders through solder. </ul>
+ perfectly parallel to the back end of the motor; if the encoder is crooked, it may cause some additional problems. Cover those holes on the encoder with solder while also making sure that the motor pins are touching the solder. This way, the motor pins are electrically connected to the encoders through solder. </ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/soldering_encoders.jpg" width=200 height=300>
+ <ul>The final product should look like the image below. Give a slight tug to the encoder to make sure that it is firmly attached to the motor and is not loose. If it is loose, re-solder the encoder until it fits perfectly. 
+ <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/full_motor_installed.jpg" width=200 height=300>
  
  
  
