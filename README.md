@@ -10,6 +10,11 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  * [__Micromouse @UCI Team Drive__](https://drive.google.com/drive/folders/1fHwfOaCsH3-F_LZoAcfiGgn9cWiebsPj) - Reference Sheets, Lecture Slides, and more informative documents
  * [__YouTube Playlist__](https://www.youtube.com/playlist?list=PLTnmBeaLzeHIIcfAZqYvjoWuxOcVnpV9Z) - Official Micromouse@UCI playlist that includes helpful video references on a wide range of subjects, ranging from soldering and safety to PID control and ChibiOS
  
+ <details>
+ <summary>Schematic Reference</summary>
+ <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/Schematic.PNG">
+ </details>
+ 
  
 <details>
 <summary>Soldering Components</summary>
