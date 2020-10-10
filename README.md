@@ -59,6 +59,19 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
 <details>
 <summary><strong>Testing</strong></summary>
+ 
+ <details>
+<summary><strong>IR Sensors</strong></summary>
+ 
+ 
+</details>
+
+<details>
+<summary><strong>Motors</strong></summary>
+ 
+ 
+</details>
+
 </details>
  
 <details>
