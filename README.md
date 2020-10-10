@@ -49,9 +49,9 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <ul>The image above shows all the components you will need to install your motor to your PCB.</ul>
  <ul>The first step is to attach the JST connector (the wires) to the encoder. The encoder is the mini black circuit board with a connecter pin for the JST.</ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/encoders_jst.jpg" width=200 height=300>
- <ul>To solder the encoder to the motor, use the image below as a reference. Make sure the encoder is perfectly parallel to the back end of the motor; if the encoder is crooked, it may cause some additional problems. Cover those holes on the encoder with solder while also making sure that the motor pins are touching the solder. This way, the motor pins are electrically connected to the encoders through solder. </ul>
+ <ul>To solder the encoder to the motor, use the image below as a reference. Make sure the encoder is perfectly parallel to the back end of the motor; if the encoder is crooked, it may cause some additional problems. Cover those holes on the encoder with solder while also making sure that the motor pins are touching the solder. This way, the motor pins are electrically connected to the encoders through solder. Give a slight tug to the encoder to make sure that it is firmly attached to the motor and is not loose. If it is loose, re-solder the encoder until it fits perfectly.</ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/soldering_encoders.jpg" width=200 height=300>
- <ul>The final product should look like the image below. Give a slight tug to the encoder to make sure that it is firmly attached to the motor and is not loose. If it is loose, re-solder the encoder until it fits perfectly. </ul>
+ <ul>Finally, attach the magnet to the motor by inserting it through the mini shaft. The final product should look like the image below.  </ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/full_motor_installed.jpg" width=200 height=300>
  </details></ul>
  
