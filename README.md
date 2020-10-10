@@ -14,7 +14,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 <details>
 <summary>Soldering Components</summary>
 <br>
- <li>Sensors</li>
+ <details><summary>IR Emitters and Receivers</summary></details>
 </details>
  
 <h2> Parts and Labels</h2>
