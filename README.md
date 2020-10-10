@@ -26,7 +26,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 * [__Voltage Regulator (Linear)__](https://www.digikey.com/product-detail/en/stmicroelectronics/LD1085V50/497-3436-5-ND/669220) - Used to step voltage down
 * __1.8KΩ__ _(R1, R2, R3, R4)_ - Current limiting resistors for Receivers.
 * __35Ω__ _(R5, R6, R7, R8)_ - Current limiting resistor for Recievers.
-* __47kΩ__ _(R11)_ - Pull Up resistor for switch. Value based on the LED bought. [Calculate](http://www.ohmslawcalculator.com/led-resistor-calculator)
+* __47kΩ__ _(R13, R14, R15, R16)_ - Pull Up resistor for switch. Value based on the LED bought. [Calculate](http://www.ohmslawcalculator.com/led-resistor-calculator)
 * __1kΩ__ _(R9, R10, R11, R12)_ - Resistors for MOSFET gate
 
  </details>
