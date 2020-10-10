@@ -24,10 +24,10 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 * [__Buzzer__](https://www.amazon.com/BETAFPV-Terminals-Electronic-Continuous-12X9-5mm/dp/B073RH8TQK) _(BZ1)_ - ~5mm buzzer pin spacing, the small ones in the link fit.
 * [__LEDs__](http://www.google.com/search?q=3528+smd+led) _(D4, D5)_ - Any 3528 sized led rated for at least 3.3v
 * [__Voltage Regulator (Linear)__](https://www.digikey.com/product-detail/en/stmicroelectronics/LD1085V50/497-3436-5-ND/669220) - Used to step voltage down
-* __120Ω__ _(R0, R1, R2, R3)_ - Current limiting resistors for Emitters.
-* __1.8KΩ__ _(R4, R5, R6, R7)_ - Current limiting resistor for Recievers.
-* __...Ω__ _(R11)_ - Pull Up resistor for switch. Value based on the LED bought. [Calculate](http://www.ohmslawcalculator.com/led-resistor-calculator)
-* __1-10kΩ__ _(R8, R9)_ - Current limiting resistors for LEDs.
+* __1.8KΩ__ _(R1, R2, R3, R4)_ - Current limiting resistors for Receivers.
+* __35Ω__ _(R5, R6, R7, R8)_ - Current limiting resistor for Recievers.
+* __47kΩ__ _(R11)_ - Pull Up resistor for switch. Value based on the LED bought. [Calculate](http://www.ohmslawcalculator.com/led-resistor-calculator)
+* __1kΩ__ _(R9, R10, R11, R12)_ - Resistors for MOSFET gate
 
  </details>
  
