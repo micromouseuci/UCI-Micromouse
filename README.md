@@ -51,12 +51,8 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/encoders_jst.jpg" width=200 height=300>
  perfectly parallel to the back end of the motor; if the encoder is crooked, it may cause some additional problems. Cover those holes on the encoder with solder while also making sure that the motor pins are touching the solder. This way, the motor pins are electrically connected to the encoders through solder. </ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/soldering_encoders.jpg" width=200 height=300>
- <ul>The final product should look like the image below. Give a slight tug to the encoder to make sure that it is firmly attached to the motor and is not loose. If it is loose, re-solder the encoder until it fits perfectly. 
+ <ul>The final product should look like the image below. Give a slight tug to the encoder to make sure that it is firmly attached to the motor and is not loose. If it is loose, re-solder the encoder until it fits perfectly. </ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/full_motor_installed.jpg" width=200 height=300>
- 
- 
- 
- 
  </details></ul>
  
 </details>
