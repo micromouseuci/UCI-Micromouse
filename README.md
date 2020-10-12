@@ -137,6 +137,8 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 
 ### Other Resources
 
+<li><strong>Git Markdown</strong></li>
+<li><a href="https://www.sparkfun.com/tutorials/223" target="_blank_"<strong>How to Read a Datasheet</strong></li>
 
  
  
