@@ -92,9 +92,6 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <summary><strong>Switches</strong></summary>
   </details></ul>
   
-   <ul><details>
- <summary><strong>Capacitors</strong></summary>
-  </details></ul>
   
 </details>
  
