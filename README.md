@@ -55,11 +55,12 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
  <p>The components must be soldered in order to maintain a solid electrical connection between two circuit elements. For ease, it's recommended that you follow the order listed below of components to solder. This will help prevent a mess or short circuits.</p>
  
- <ul>Capacitors</ul>
- <ul>Motor Encoder Wiring</ul>
- <ul>Emitters, Receivers, MOSFETs, and Resistors</ul>
- <ul>Switches and Buzzer</ul>
- <ul>Headers and Dip Socket</ul>
+ 
+    <ul><details>
+ <summary><strong>Capacitors</strong></summary>
+  </details></ul>
+ 
+ 
  
  <ul><details><summary><strong>IR Emitters and Receivers</strong></summary>
   <br> <li>On the schematic, the IR Emitters are labeled as D0, D1, D2, and D3. Find the corresponding labels on the PCB. They should be at the front of the board</li>
@@ -81,25 +82,27 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/full_motor_installed.jpg" width=200 height=300>
  </details></ul>
  
+    <ul><details>
+ <summary><strong>MOSFETs and Resistors</strong></summary>
+  </details></ul>
+ 
+
  <ul><details>
+ <summary><strong>Voltage Regulator</strong></summary>
+  </details></ul>
+  
+
+   <ul><details>
+ <summary><strong>Switches and Buzzer</strong></summary>
+  </details></ul>
+  
+   <ul><details>
  <summary><strong>Header Pins & Dip Socket</strong></summary>
  <ul>The header pins and dip socket are used for easy replacement of the Teensy and motor driver respectively in the event that they burn out. </ul>
  <ul>For the Teensy, you will need two 1x14 headers and one 1x5 header. Solder them on individually in the location shown below</ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/header-pins.jpg" width=200 height=300>
   </details></ul>
  
- <ul><details>
- <summary><strong>Voltage Regulator</strong></summary>
-  </details></ul>
-  
-   <ul><details>
- <summary><strong>MOSFETs,Capacitors, and Resistors</strong></summary>
-  </details></ul>
- 
-   <ul><details>
- <summary><strong>Switches</strong></summary>
-  </details></ul>
-  
   
 </details>
  
