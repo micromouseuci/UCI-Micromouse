@@ -82,7 +82,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/full_motor_installed.jpg" width=200 height=300>
  </details></ul>
  
-    <ul><details>
+ <ul><details>
  <summary><strong>MOSFETs and Resistors</strong></summary>
   </details></ul>
  
