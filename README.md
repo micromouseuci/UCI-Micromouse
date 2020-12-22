@@ -103,6 +103,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/header-pins.jpg" width=200 height=300>
   
   </details></ul>
+  <ul><details>
   <summary><strong>Header Pins for Teensy</strong></summary>
   </details></ul>
  
