@@ -101,12 +101,11 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <ul>The header pins and dip socket are used for easy replacement of the Teensy and motor driver respectively in the event that they burn out. </ul>
  <ul>For the Teensy, you will need two 1x14 headers and one 1x5 header. Solder them on individually in the location shown below</ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/header-pins.jpg" width=200 height=300>
-  </details></ul>
   
-  <summary><strong>Header Pins to Teensy</strong></summary>
+  </details></ul>
+  <summary><strong>Header Pins for Teensy</strong></summary>
   </details></ul>
  
-  
 </details>
  
 <details>
