@@ -9,7 +9,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  * [__Official Club Website__](https://micromouseuci.github.io/) - Get updates on club meetings and club information
  * [__Micromouse @UCI Team Drive__](https://drive.google.com/drive/folders/1fHwfOaCsH3-F_LZoAcfiGgn9cWiebsPj) - Reference Sheets, Lecture Slides, and more informative documents
  * [__YouTube Playlist__](https://www.youtube.com/playlist?list=PLTnmBeaLzeHIIcfAZqYvjoWuxOcVnpV9Z) - Official Micromouse@UCI playlist that includes helpful video references on a wide range of subjects, ranging from soldering and safety to PID control and ChibiOS
- 
+ * .[__Facebook__](https://www.facebook.com/groups/153805515376853) - Club Facebook (only UCI students can join)
  
  <details>
  <summary><strong>Schematic Reference</strong></summary>
