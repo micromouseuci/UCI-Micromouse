@@ -56,7 +56,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <p>The components must be soldered in order to maintain a solid electrical connection between two circuit elements. For ease, it's recommended that you follow the order listed below of components to solder. This will help prevent a mess or short circuits.</p>
  
  
-    <ul><details>
+   <ul><details>
  <summary><strong>Capacitors</strong></summary>
   </details></ul>
  
