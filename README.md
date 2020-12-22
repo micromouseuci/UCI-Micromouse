@@ -53,6 +53,14 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 <details>
  <summary><strong>Soldering Components</strong></summary>
  
+ <p>The components must be soldered in order to maintain a solid electrical connection between two circuit elements. For ease, it's recommended that you follow the order listed below of components to solder. This will help prevent a mess or short circuits.</p>
+ 
+ <ul>Capacitors</ul>
+ <ul>Motor Encoder Wiring</ul>
+ <ul>Emitters, Receivers, MOSFETs, and Resistors</ul>
+ <ul>Switches and Buzzer</ul>
+ <ul>Headers and Dip Socket</ul>
+ 
  <ul><details><summary><strong>IR Emitters and Receivers</strong></summary>
   <br> <li>On the schematic, the IR Emitters are labeled as D0, D1, D2, and D3. Find the corresponding labels on the PCB. They should be at the front of the board</li>
   <li>Place the shorter end of the emitter in the positive throughole of the corresponding pad and the longer end through the negative side. For reference, the D0 pad is shown below.</li>
