@@ -14,6 +14,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  #### Navigation
  To help you navigate through this repository, here is an overview of each section.
  1. Schematic Reference - 
+ 2. 
  
  
  <details>
