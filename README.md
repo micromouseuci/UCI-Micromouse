@@ -88,6 +88,8 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <p>To solder the resistor, first make sure that the right resistor value is selected. Choosing the incorrect resistor value may result in irregular functionality; to determine which resistor must be used, first look at the KiCAD schematic of the mouse. Each resistor on the PCB is labeled as "R#" (i.e. R7). Find the corresponding resistor value on the schematic, and that will be the resistor value needed at that point (i.e. R7 is labeled as 35 ohms, so you will need a 35 ohm resistor at R7). To solder, simply bend the resistor and insert them into the holes specified (as shown above). The ceramic part of the resistor should be lined up with the rectangular engraving on the PCB and should touch the PCB. Solder the ends of the resistor at the bottom of the PCB, and then cut off the ends. The final product should look like this:</p>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/Soldered_Resistor.jpg" width=200 height=300>
  
+ <p>The MOSFETs will be soldered on in a similar manner. All the MOSFET pads will be labeled as "T#" (i.e. T2) on the board. Place the MOSFET on the pad, with the flat face lined up with the straight edge of the MOSFET sillhouette. This will ensure the correct orientation of the transistor. Push the MOSFET in as much as you can. Solder the leads from the bottom of the board and cut off the ends. </p>
+ 
   </details></ul>
  
 
