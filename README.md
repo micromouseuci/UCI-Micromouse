@@ -13,8 +13,8 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
  #### Navigation
  To help you navigate through this repository, here is an overview of each section.
- 1. Schematic Reference - 
- 2. 
+ 1. <strong>Schematic Reference</strong> - Shows the schematic of the PCB. Use this to refer back to the PCB as you are soldering and testing components on the PCB. 
+ 2. <strong>Soldering Components</strong> - simple instructions on how to solder each component onto the PCB.
  
  
  <details>
