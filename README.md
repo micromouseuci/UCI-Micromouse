@@ -11,6 +11,11 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  * [__YouTube Playlist__](https://www.youtube.com/playlist?list=PLTnmBeaLzeHIIcfAZqYvjoWuxOcVnpV9Z) - Official Micromouse@UCI playlist that includes helpful video references on a wide range of subjects, ranging from soldering and safety to PID control and ChibiOS
  * [__Facebook__](https://www.facebook.com/groups/153805515376853) - Club Facebook (only UCI students can join)
  
+ #### Navigation
+ To help you navigate through this repository, here is an overview of each section.
+ 1. Schematic Reference - 
+ 
+ 
  <details>
  <summary><strong>Schematic Reference</strong></summary>
  <p>This is the schematic for Micromouse at UCI's PCB. The parts are listed below the image, with the labels in parentheses. Below the labels are further explanations of each circuit so that you can get an understanding of how each circuit works and why we included them in the PCB</p>
