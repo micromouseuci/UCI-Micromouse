@@ -118,6 +118,10 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
   </details></ul>
   <ul><details>
   <summary><strong>Header Pins for Teensy</strong></summary>
+ <p>To add connections to the Teensy, male header pins must be installed onto the Teensy. Open the pack of male header pins, and break off two pieces of 14-unit pins (since the Teensy has 14 pins lengthwise) and one 5-unit piece (widthwise). When soldering the pins on, ensure that the black caps go UNDER the Teensy board, and not on top (image shown below). Once you solder them, cut off the top leads. You will also need to insert 1 pin into the final hole in the Teensy. You should now be able to place the Teensy on the header pins.  </p>
+ 
+ <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/teensy_headers.PNG" width=200 height=300>
+ 
   </details></ul>
  
 </details>
