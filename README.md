@@ -84,6 +84,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
  <ul><details>
  <summary><strong>MOSFETs and Resistors</strong></summary>
+  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/Resistor.jpg" width=200 height=300>
   </details></ul>
  
 
