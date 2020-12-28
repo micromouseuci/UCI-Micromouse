@@ -57,6 +57,17 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 
  </details>
  
+ <details>
+ <summary><strong>Setting Up Arduino and Teensy</strong></summary>
+ 
+ <p></p>
+ 
+ 
+   <ul><details>
+ 
+ 
+ 
+ 
  
 <details>
  <summary><strong>Soldering Components</strong></summary>
