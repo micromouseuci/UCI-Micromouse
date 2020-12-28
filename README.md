@@ -60,8 +60,10 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <details>
  <summary><strong>Setting Up Arduino and Teensy</strong></summary>
  
- <p></p>
- 
+ <p>In order to run your scripts on your computer, you will need to install Arduino.</p>
+ * [__Download Arduino Software__]( https://www.arduino.cc/en/software) - Download the correct version based on the system you are using. Avoid downloading the Zip file if you are using Windows.</ul>
+ * [__Download Teensyduino__](https://www.pjrc.com/teensy/td_download.html) - Download the Teensyduino software for your system. Make sure that you select the Teensyduino, as there are many links on this website that point to the Arduino website that you had downloaded the Arduino software from.
+
  </details>
  
  
