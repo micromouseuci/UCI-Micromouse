@@ -62,8 +62,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
  <p></p>
  
- 
-   <ul><details>
+ </details>
  
  
  
