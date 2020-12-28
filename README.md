@@ -146,12 +146,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
 <details>
 <summary><strong>Software</strong></summary>
- </details>
- 
- <details>
-<summary><strong>3D Printed Parts</strong></summary>
- </details>
- 
+
 
 #### Interrupts
 
@@ -180,8 +175,11 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 * goForward() - Use encoders to go straight.
 * turnAround() - turnRight * 2
 
-
-</details>
+ </details>
+ 
+ <details>
+<summary><strong>3D Printed Parts</strong></summary>
+ </details>
  
 
 ### Other Resources
