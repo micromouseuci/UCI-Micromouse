@@ -118,7 +118,8 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <ul><details>
  <summary><strong>Voltage Regulator</strong></summary>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/VRM.jpg" width=200 height=300>
-  </details></ul> Solder Voltage Regulator (https://youtu.be/L_DIpklxXcI).
+ <p>YouTube Video (https://youtu.be/L_DIpklxXcI).</p>
+  </details></ul> 
 
    <ul><details>
  <summary><strong>Switches and Buzzer</strong></summary>
