@@ -9,6 +9,15 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  * [__Official Club Website__](https://micromouseuci.github.io/) - Get updates on club meetings and club information
  * [__Micromouse @UCI Team Drive__](https://drive.google.com/drive/folders/1fHwfOaCsH3-F_LZoAcfiGgn9cWiebsPj) - Reference Sheets, Lecture Slides, and more informative documents
  * [__YouTube Playlist__](https://www.youtube.com/playlist?list=PLTnmBeaLzeHIIcfAZqYvjoWuxOcVnpV9Z) - Official Micromouse@UCI playlist that includes helpful video references on a wide range of subjects, ranging from soldering and safety to PID control and ChibiOS
+ * [__Facebook__](https://www.facebook.com/groups/153805515376853) - Club Facebook (only UCI students can join)
+ 
+ #### Navigation
+ To help you navigate through this repository, here is an overview of each section.
+ 1. <strong>Schematic Reference</strong> - Shows the schematic of the PCB. Use this to refer back to the PCB as you are soldering and testing components on the PCB. 
+ 2. <strong>Setting Up Arduino and Teensy</strong> - How to download and set up the Arduino software and Teensy drivers
+ 3. <strong>Soldering Components</strong> - simple instructions on how to solder each component onto the PCB.
+ 4. <strong>Testing</strong> - testing components using breadboards
+ 5. <strong>Software</strong> - programming instructions and suggestions
  
  
  <details>
@@ -49,9 +58,31 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 
  </details>
  
+ <details>
+ <summary><strong>Setting Up Arduino and Teensy</strong></summary>
+ 
+ <p>In order to run your scripts on your computer, you will need to install Arduino.</p>
+ 
+ * [__Download Arduino Software__]( https://www.arduino.cc/en/software) - Download the correct version based on the system you are using. Avoid downloading the Zip file if you are using Windows.
+ * [__Download Teensyduino__](https://www.pjrc.com/teensy/td_download.html) - Download the Teensyduino software for your system. Make sure that you select the Teensyduino, as there are many links on this website that point to the Arduino website that you had downloaded the Arduino software from.
+
+ </details>
+ 
+ 
+ 
+ 
  
 <details>
  <summary><strong>Soldering Components</strong></summary>
+ 
+ <p>The components must be soldered in order to maintain a solid electrical connection between two circuit elements. For ease, it's recommended that you follow the order listed below of components to solder. This will help prevent a mess or short circuits.</p>
+ 
+ 
+   <ul><details>
+ <summary><strong>Capacitors</strong></summary>
+  </details></ul>
+ 
+ 
  
  <ul><details><summary><strong>IR Emitters and Receivers</strong></summary>
   <br> <li>On the schematic, the IR Emitters are labeled as D0, D1, D2, and D3. Find the corresponding labels on the PCB. They should be at the front of the board</li>
@@ -73,6 +104,42 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/full_motor_installed.jpg" width=200 height=300>
  </details></ul>
  
+ <ul><details>
+ <summary><strong>MOSFETs and Resistors</strong></summary>
+  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/Resistor.jpg" width=200 height=300>
+ <p>To solder the resistor, first make sure that the right resistor value is selected. Choosing the incorrect resistor value may result in irregular functionality; to determine which resistor must be used, first look at the KiCAD schematic of the mouse. Each resistor on the PCB is labeled as "R#" (i.e. R7). Find the corresponding resistor value on the schematic, and that will be the resistor value needed at that point (i.e. R7 is labeled as 35 ohms, so you will need a 35 ohm resistor at R7). To solder, simply bend the resistor and insert them into the holes specified (as shown above). The ceramic part of the resistor should be lined up with the rectangular engraving on the PCB and should touch the PCB. Solder the ends of the resistor at the bottom of the PCB, and then cut off the ends. The final product should look like this:</p>
+ <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/Soldered_Resistor.jpg" width=200 height=300>
+ 
+ <p>The MOSFETs will be soldered on in a similar manner. All the MOSFET pads will be labeled as "T#" (i.e. T2) on the board. Place the MOSFET on the pad, with the flat face lined up with the straight edge of the MOSFET sillhouette. This will ensure the correct orientation of the transistor. Push the MOSFET in as much as you can. Solder the leads from the bottom of the board and cut off the ends. </p>
+ 
+  </details></ul>
+ 
+
+ <ul><details>
+ <summary><strong>Voltage Regulator</strong></summary>
+ <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/VRM.jpg" width=200 height=300>
+ <p>YouTube Video (https://youtu.be/L_DIpklxXcI).</p>
+  </details></ul> 
+
+   <ul><details>
+ <summary><strong>Switches and Buzzer</strong></summary>
+  </details></ul>
+  
+   <ul><details>
+ <summary><strong>Header Pins & Dip Socket</strong></summary>
+ <ul>The header pins and dip socket are used for easy replacement of the Teensy and motor driver respectively in the event that they burn out. </ul>
+ <ul>For the Teensy, you will need two 1x14 headers and one 1x5 header. Solder them on individually in the location shown below</ul>
+ <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/header-pins.jpg" width=200 height=300>
+  
+  </details></ul>
+  <ul><details>
+  <summary><strong>Header Pins for Teensy</strong></summary>
+ <p>To add connections to the Teensy, male header pins must be installed onto the Teensy. Open the pack of male header pins, and break off two pieces of 14-unit pins (since the Teensy has 14 pins lengthwise) and one 5-unit piece (widthwise). When soldering the pins on, ensure that the black caps go UNDER the Teensy board, and not on top (image shown below). Once you solder them, cut off the top leads. You will also need to insert 1 pin into the final hole in the Teensy. You should now be able to place the Teensy on the header pins.  </p>
+ 
+ <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/teensy_headers.PNG" width=200 height=300>
+ 
+  </details></ul>
+ 
 </details>
  
 <details>
@@ -93,6 +160,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  
 <details>
 <summary><strong>Software</strong></summary>
+
 
 #### Interrupts
 
@@ -121,12 +189,17 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
 * goForward() - Use encoders to go straight.
 * turnAround() - turnRight * 2
 
-
-</details>
+ </details>
+ 
+ <details>
+<summary><strong>3D Printed Parts</strong></summary>
+ </details>
  
 
 ### Other Resources
 
+<li><a href="https://git-scm.com/book/en/v2" target="_blank"><strong>Git Markdown</strong></a></li>
+<li><a href="https://www.sparkfun.com/tutorials/223" target="_blank"><strong>How to Read a Datasheet</strong></a></li>
 
  
  
