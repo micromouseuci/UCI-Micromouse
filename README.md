@@ -102,6 +102,7 @@ This is the official GitHub of Micromouse @ UCI. This repository is here to allo
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/soldering_encoders.jpg" width=200 height=300>
  <ul>Finally, attach the magnet to the motor by inserting it through the mini shaft. The final product should look like the image below.  </ul>
  <img src="https://github.com/micromouseuci/UCI-Micromouse/blob/master/images/full_motor_installed.jpg" width=200 height=300>
+ <ul> When it comes time to install the motor onto the PCB, you will need to make sure to have your motor offsets ready. First, place the motor offset onto the PCB, lining up with the motor holes. </ul>
  </details></ul>
  
  <ul><details>
