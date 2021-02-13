@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name teensy)(type KiCad)(uri C:/Users/Jonathan/Desktop/projects/UCI-Micromouse/pcb_files/mouse/resources/Footprints/teensy.pretty)(options "")(descr ""))
+)
