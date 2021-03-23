@@ -1,8 +1,8 @@
 (fp_lib_table
-  (lib (name teensy)(type KiCad)(uri ${KIPRJMOD}/resources/Footprints/teensy.pretty)(options "")(descr ""))
   (lib (name misc)(type KiCad)(uri ${KIPRJMOD}/resources/Footprints/misc.pretty)(options "")(descr ""))
   (lib (name SN754410NE.kicad_mod)(type Legacy)(uri ${KIPRJMOD}/resources/Footprints/misc.pretty/SN754410NE.kicad_mod.mod)(options "")(descr ""))
   (lib (name keyswitches)(type KiCad)(uri ${KIPRJMOD}/resources/Footprints/keyswitches.pretty)(options "")(descr ""))
   (lib (name Package_TO_SOT_THT)(type KiCad)(uri ${KIPRJMOD}/resources/Footprints/Package_TO_SOT_THT.pretty)(options "")(descr ""))
   (lib (name pika)(type KiCad)(uri ${KIPRJMOD}/resources/Footprints/pika.pretty)(options "")(descr ""))
+  (lib (name teensy)(type KiCad)(uri ${KIPRJMOD}/resources/Footprints/teensy.pretty)(options "")(descr ""))
 )

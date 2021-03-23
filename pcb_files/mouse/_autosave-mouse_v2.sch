@@ -408,12 +408,6 @@ Text Label 7600 3025 2    50   ~ 0
 PUSH_SW
 Text Label 7600 925  2    50   ~ 0
 GND
-NoConn ~ 9800 2825
-NoConn ~ 9800 2725
-NoConn ~ 9800 2625
-NoConn ~ 9800 2525
-NoConn ~ 9800 2425
-NoConn ~ 9800 2325
 NoConn ~ 9800 2225
 NoConn ~ 9800 2125
 NoConn ~ 9800 2025
@@ -923,15 +917,11 @@ Wire Notes Line
 	2900 8100 2900 4950
 Wire Notes Line
 	500  4950 6800 4950
-Wire Notes Line
-	500  8100 6800 8100
 NoConn ~ 7600 2025
 Wire Notes Line
 	6800 500  6800 11200
 Text Notes 10400 5000 2    79   ~ 0
 Control
-Wire Notes Line
-	10500 500  10500 5100
 Wire Notes Line
 	10500 5100 6800 5100
 $Comp
@@ -1204,12 +1194,12 @@ Wire Wire Line
 Text Label 4200 9100 3    50   ~ 0
 GND
 $Comp
-L Connector:Conn_01x06_Female J?
+L Connector:Conn_01x06_Female J1
 U 1 1 60599606
 P 7600 6550
-F 0 "J?" H 7492 6025 50  0000 C CNN
+F 0 "J1" H 7492 6025 50  0000 C CNN
 F 1 "Conn_01x06_Female" H 7492 6116 50  0000 C CNN
-F 2 "" H 7600 6550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7600 6550 50  0001 C CNN
 F 3 "~" H 7600 6550 50  0001 C CNN
 	1    7600 6550
 	-1   0    0    1   
@@ -1232,4 +1222,35 @@ Text Label 8200 6650 0    50   ~ 0
 HC05_RX
 NoConn ~ 7800 6250
 NoConn ~ 7800 6750
+Wire Notes Line
+	500  8100 10500 8100
+Wire Notes Line
+	10500 500  10500 8100
+Text Notes 9050 8000 0    79   ~ 0
+HC05 Bluetooth Module
+Text Label 9800 2325 0    50   ~ 0
+HC05_RX
+Text Label 9800 2425 0    50   ~ 0
+HC05_TX
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 606002CF
+P 9525 4325
+F 0 "J2" H 9553 4301 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 9553 4210 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9525 4325 50  0001 C CNN
+F 3 "~" H 9525 4325 50  0001 C CNN
+	1    9525 4325
+	1    0    0    -1  
+$EndComp
+Text Label 9325 4325 2    50   ~ 0
+SDA2
+Text Label 9325 4425 2    50   ~ 0
+SCL2
+Text Label 9800 2725 0    50   ~ 0
+SDA2
+Text Label 9800 2825 0    50   ~ 0
+SCL2
+NoConn ~ 9800 2625
+NoConn ~ 9800 2525
 $EndSCHEMATC

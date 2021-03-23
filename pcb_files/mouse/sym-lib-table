@@ -1,9 +1,8 @@
 (sym_lib_table
-  (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/resources/Symbols/teensy_library/teensy.lib)(options "")(descr ""))
   (lib (name SN754410NE)(type Legacy)(uri ${KIPRJMOD}/resources/Symbols/misc/SN754410NE.lib)(options "")(descr ""))
   (lib (name encoder_3081)(type Legacy)(uri ${KIPRJMOD}/resources/Symbols/misc/encoder_3081.lib)(options "")(descr ""))
-  (lib (name teeensy)(type Legacy)(uri /Users/Jonathan/Downloads/weensy/teeensy.lib)(options "")(descr ""))
   (lib (name mouse-rescue)(type Legacy)(uri ${KIPRJMOD}/mouse-rescue.lib)(options "")(descr ""))
   (lib (name "teensy(updated)")(type Legacy)(uri F:/teensy_library/teensy.lib)(options "")(descr ""))
   (lib (name mouse_v2-rescue)(type Legacy)(uri ${KIPRJMOD}/mouse_v2-rescue.lib)(options "")(descr ""))
+  (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/resources/Symbols/teensy_library/teensy.lib)(options "")(descr ""))
 )
