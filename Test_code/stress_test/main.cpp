@@ -86,10 +86,17 @@ void setup() {
   pinMode(M2_SPD_PIN, OUTPUT);
   pinMode(M2_ENC_A_PIN, INPUT); //check if input pullup
   pinMode(M2_ENC_B_PIN, INPUT);
-
+  
   pinMode(BUZZ_PIN, OUTPUT);
   pinMode(SW_1_PIN, INPUT);
   //pinMode(RGB_DATA_PIN, OUTPUT);
+
+  analogWriteFrequency(M1_BACK_PIN, 488.28);
+  analogWriteFrequency(M1_FWD_PIN, 488.28);
+  analogWriteFrequency(M1_SPD_PIN, 488.28);
+  analogWriteFrequency(M2_BACK_PIN, 488.28);
+  analogWriteFrequency(M2_FWD_PIN, 488.28);
+  analogWriteFrequency(M2_SPD_PIN, 488.28);
 
   //Interrupts
   attachInterrupt(M2_ENC_A_PIN, enc_a_l_intr_handler, FALLING); //check if rising or falling
@@ -137,16 +144,16 @@ int get_dist_fl(){
   return dist;
 }
 
-void set_motor_l(int dir, int speed){
+void set_motor_l(int dir, int mspeed){
   if(dir == 0){
     digitalWrite(M2_FWD_PIN, LOW);
     digitalWrite(M2_BACK_PIN, HIGH);
-    analogWrite(M2_SPD_PIN, speed);
+    analogWrite(M2_SPD_PIN, mspeed);
   }
   else if(dir == 1){
     digitalWrite(M2_FWD_PIN, HIGH);
     digitalWrite(M2_BACK_PIN, LOW);
-    analogWrite(M2_SPD_PIN, speed);
+    analogWrite(M2_SPD_PIN, mspeed);
   }
   else if(dir == 2){
     digitalWrite(M2_FWD_PIN, LOW);
@@ -158,17 +165,17 @@ void set_motor_l(int dir, int speed){
   }
 }
 
-void set_motor_r(int dir, int speed){
+void set_motor_r(int dir, int mspeed){
   if(dir == 0){
     
     digitalWrite(M1_BACK_PIN, LOW);
     digitalWrite(M1_FWD_PIN, HIGH);
-    analogWrite(M1_SPD_PIN, speed);
+    analogWrite(M1_SPD_PIN, mspeed);
   }
   else if(dir == 1){
     digitalWrite(M1_FWD_PIN, LOW);
     digitalWrite(M1_BACK_PIN, HIGH);
-    analogWrite(M1_SPD_PIN, speed);
+    analogWrite(M1_SPD_PIN, mspeed);
   }
   else if(dir == 2){
     analogWrite(M1_SPD_PIN, 0);
@@ -180,6 +187,52 @@ void set_motor_r(int dir, int speed){
     //incorrect direction given
   }
 }
+
+void set_motor_l_pulse_dir(int dir, int mspeed){
+  if(dir == 0){
+    digitalWrite(M2_FWD_PIN, LOW);
+    digitalWrite(M2_SPD_PIN, HIGH);
+    analogWrite(M2_BACK_PIN, mspeed);
+  }
+  else if(dir == 1){
+    digitalWrite(M2_BACK_PIN, LOW);
+    digitalWrite(M2_SPD_PIN, HIGH);
+    analogWrite(M2_FWD_PIN, mspeed);
+  }
+  else if(dir == 2){
+    digitalWrite(M2_FWD_PIN, LOW);
+    digitalWrite(M2_BACK_PIN, LOW);
+    analogWrite(M2_SPD_PIN, 0);
+  }
+  else{
+    //incorrect direction given
+  }
+}
+
+void set_motor_r_pulse_dir(int dir, int mspeed){
+  if(dir == 0){
+    
+    digitalWrite(M1_BACK_PIN, LOW);
+    digitalWrite(M1_SPD_PIN, HIGH);
+    analogWrite(M1_FWD_PIN, mspeed);
+  }
+  else if(dir == 1){
+    digitalWrite(M1_FWD_PIN, LOW);
+    digitalWrite(M1_SPD_PIN, HIGH);
+    analogWrite(M1_BACK_PIN, mspeed);
+  }
+  else if(dir == 2){
+    analogWrite(M1_SPD_PIN, 0);
+    digitalWrite(M1_FWD_PIN, LOW);
+    digitalWrite(M1_BACK_PIN, LOW);
+    
+  }
+  else{
+    //incorrect direction given
+  }
+}
+
+
 
 
 void rst_enc_a_l_count(){
