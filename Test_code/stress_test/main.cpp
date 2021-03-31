@@ -24,10 +24,10 @@
 #define M2_ENC_A_PIN 1
 #define M2_ENC_B_PIN 0
 
-int enc_a_l_count = 0;
-int enc_b_l_count = 0;
-int enc_a_r_count = 0;
-int enc_b_r_count = 0;
+unsigned int enc_a_l_count = 0;
+unsigned int enc_b_l_count = 0;
+unsigned int enc_a_r_count = 0;
+unsigned int enc_b_r_count = 0;
 
 #define BUZZ_PIN 2
 #define SW_1_PIN 15
