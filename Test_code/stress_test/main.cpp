@@ -96,6 +96,7 @@ void setup() {
   attachInterrupt(M2_ENC_B_PIN, enc_b_l_intr_handler, FALLING);
   attachInterrupt(M1_ENC_A_PIN, enc_a_r_intr_handler, FALLING);
   attachInterrupt(M1_ENC_B_PIN, enc_b_r_intr_handler, FALLING);
+  delay(2000);
 }
 
 
