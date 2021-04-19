@@ -30,6 +30,9 @@ unsigned int enc_b_r_count = 0;
 
 #define BUZZ_PIN 2
 #define SW_1_PIN 15
+#define LED1_PIN 5
+#define LED2_PIN 3
+#define LED3_PIN 4
 //#define SW_2_PIN 12
 //#define RGB_DATA_PIN 10
 
@@ -144,6 +147,34 @@ int get_dist_fl() {
   digitalWrite(EMIT_FL_PIN, LOW);
   return dist;
 }
+
+void turn_all_emit_on(){
+  digitalWrite(EMIT_FL_PIN, HIGH);
+  digitalWrite(EMIT_FR_PIN, HIGH);
+  digitalWrite(EMIT_R_PIN, HIGH);
+  digitalWrite(EMIT_L_PIN, HIGH);
+}
+
+void turn_all_emit_off(){
+  digitalWrite(EMIT_FL_PIN, LOW);
+  digitalWrite(EMIT_FR_PIN, LOW);
+  digitalWrite(EMIT_R_PIN, LOW);
+  digitalWrite(EMIT_L_PIN, LOW);
+}
+
+void turn_all_led_on(){
+  digitalWrite(LED1_PIN, HIGH);
+  digitalWrite(LED2_PIN, HIGH);
+  digitalWrite(LED3_PIN, HIGH);
+}
+
+
+void turn_all_led_off(){
+  digitalWrite(LED1_PIN, LOW);
+  digitalWrite(LED2_PIN, LOW);
+  digitalWrite(LED3_PIN, LOW);
+}
+
 
 void set_motor_l(int dir, int mspeed) {
   if (dir == 0) {
@@ -268,6 +299,11 @@ void set_buzzer_off(){
 //150 measure about 6v
 //140 measure about 5.9v
 
+//reccomend 
+
+//Ran with motor limit 140, 
+//with motors maxed out, all emitters on, all leds on, (buzzer off), no resistance at wheels. it drew about 0.9A.
+
 
 
 #define UPPER_MOTOR_LIMIT 140
@@ -277,6 +313,8 @@ void set_buzzer_off(){
 
 int last_spd;
 void loop() {
+  turn_all_emit_on();
+  turn_all_led_on();
   analogWrite(BUZZ_PIN, 2);
   //0 == fwd, 1 = back 2 = stop
   //move forward for 2 seconds
@@ -313,6 +351,8 @@ void loop() {
   delay(MOTOR_SWITCH_DIR_DELAY);
   //Test incrementing/decrementing motor speeds
   //increment the motor speed from 0 to UPPER_MOTOR_LIMIT, then decrement it to 0
+  turn_all_emit_off();
+  turn_all_led_off();
   last_spd = 0;
   for (int i = 0; i < 5; i ++) { //repeat the sequence below 5 times
     //increment speed by 1
