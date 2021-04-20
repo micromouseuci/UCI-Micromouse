@@ -368,19 +368,8 @@ Text Label 7600 1725 2    50   ~ 0
 M2_forward
 Text Label 7600 1925 2    50   ~ 0
 M2_backward
-Text Label 8225 4650 3    50   ~ 0
+Text Label 8225 4350 0    50   ~ 0
 3.3v
-$Comp
-L mouse_v2-rescue:R-Device R17
-U 1 1 5D2C4CD1
-P 8225 4500
-F 0 "R17" H 8295 4546 50  0000 L CNN
-F 1 "R_PULL_UP" H 8295 4455 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8155 4500 50  0001 C CNN
-F 3 "~" H 8225 4500 50  0001 C CNN
-	1    8225 4500
-	1    0    0    -1  
-$EndComp
 Text Label 7475 4350 2    50   ~ 0
 GND
 Text Label 4525 7725 0    50   ~ 0
@@ -408,12 +397,6 @@ Text Label 7600 3025 2    50   ~ 0
 PUSH_SW
 Text Label 7600 925  2    50   ~ 0
 GND
-NoConn ~ 9800 2825
-NoConn ~ 9800 2725
-NoConn ~ 9800 2625
-NoConn ~ 9800 2525
-NoConn ~ 9800 2425
-NoConn ~ 9800 2325
 NoConn ~ 9800 2225
 NoConn ~ 9800 2125
 NoConn ~ 9800 2025
@@ -901,7 +884,7 @@ GND
 Wire Wire Line
 	4600 6050 4600 6325
 Connection ~ 4600 6325
-Text Label 3475 6325 2    50   ~ 0
+Text Label 3200 6325 2    50   ~ 0
 vBatt
 Text Label 5650 6625 3    50   ~ 0
 GND
@@ -923,15 +906,11 @@ Wire Notes Line
 	2900 8100 2900 4950
 Wire Notes Line
 	500  4950 6800 4950
-Wire Notes Line
-	500  8100 6800 8100
 NoConn ~ 7600 2025
 Wire Notes Line
 	6800 500  6800 11200
 Text Notes 10400 5000 2    79   ~ 0
 Control
-Wire Notes Line
-	10500 500  10500 5100
 Wire Notes Line
 	10500 5100 6800 5100
 $Comp
@@ -983,13 +962,13 @@ NoConn ~ 9800 3425
 $Comp
 L mouse_v2-rescue:Buzzer-Device BZ1
 U 1 1 5F35DDB2
-P 1075 6775
-F 0 "BZ1" H 1228 6804 50  0000 L CNN
-F 1 "Buzzer" H 1228 6713 50  0000 L CNN
-F 2 "misc:9x5.5mm Buzzer" V 1050 6875 50  0001 C CNN
-F 3 "~" V 1050 6875 50  0001 C CNN
-	1    1075 6775
-	0    -1   -1   0   
+P 1150 6275
+F 0 "BZ1" H 1303 6304 50  0000 L CNN
+F 1 "Buzzer" H 1303 6213 50  0000 L CNN
+F 2 "misc:9x5.5mm Buzzer" V 1125 6375 50  0001 C CNN
+F 3 "~" V 1125 6375 50  0001 C CNN
+	1    1150 6275
+	1    0    0    -1  
 $EndComp
 $Comp
 L mouse_v2-rescue:LED-Device D4
@@ -1101,27 +1080,10 @@ Wire Wire Line
 	2500 7750 2425 7750
 Text Label 1800 7725 3    50   ~ 0
 GND
-$Comp
-L mouse_v2-rescue:R-Device R18
-U 1 1 5F3C1532
-P 975 7150
-F 0 "R18" H 905 7104 50  0000 R CNN
-F 1 "R" H 905 7195 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 905 7150 50  0001 C CNN
-F 3 "~" H 975 7150 50  0001 C CNN
-	1    975  7150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	975  7000 975  6875
-Text Label 975  7300 3    50   ~ 0
+Text Label 575  7025 3    50   ~ 0
 Buzzer
 Text Label 1350 6975 0    50   ~ 0
 GND
-Wire Wire Line
-	1175 6975 1175 6875
-Wire Wire Line
-	1175 6975 1350 6975
 Text Label 7600 1425 2    50   ~ 0
 LED_3
 Text Label 7600 1325 2    50   ~ 0
@@ -1166,8 +1128,6 @@ Connection ~ 4375 6325
 Connection ~ 4600 5675
 Wire Wire Line
 	3650 6050 3650 6325
-Wire Wire Line
-	3475 6325 3650 6325
 Connection ~ 3650 6325
 Wire Wire Line
 	4125 6050 4125 6325
@@ -1204,12 +1164,12 @@ Wire Wire Line
 Text Label 4200 9100 3    50   ~ 0
 GND
 $Comp
-L Connector:Conn_01x06_Female J?
+L Connector:Conn_01x06_Female J1
 U 1 1 60599606
 P 7600 6550
-F 0 "J?" H 7492 6025 50  0000 C CNN
+F 0 "J1" H 7492 6025 50  0000 C CNN
 F 1 "Conn_01x06_Female" H 7492 6116 50  0000 C CNN
-F 2 "" H 7600 6550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7600 6550 50  0001 C CNN
 F 3 "~" H 7600 6550 50  0001 C CNN
 	1    7600 6550
 	-1   0    0    1   
@@ -1232,4 +1192,132 @@ Text Label 8200 6650 0    50   ~ 0
 HC05_RX
 NoConn ~ 7800 6250
 NoConn ~ 7800 6750
+Wire Notes Line
+	500  8100 10500 8100
+Wire Notes Line
+	10500 500  10500 8100
+Text Notes 9050 8000 0    79   ~ 0
+HC05 Bluetooth Module
+Text Label 9800 2325 0    50   ~ 0
+HC05_RX
+Text Label 9800 2425 0    50   ~ 0
+HC05_TX
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 606002CF
+P 9525 4325
+F 0 "J2" H 9553 4301 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 9553 4210 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9525 4325 50  0001 C CNN
+F 3 "~" H 9525 4325 50  0001 C CNN
+	1    9525 4325
+	1    0    0    -1  
+$EndComp
+Text Label 9325 4325 2    50   ~ 0
+SDA2
+Text Label 9325 4425 2    50   ~ 0
+SCL2
+Text Label 9800 2725 0    50   ~ 0
+SDA2
+Text Label 9800 2825 0    50   ~ 0
+SCL2
+NoConn ~ 9800 2625
+NoConn ~ 9800 2525
+Wire Wire Line
+	3200 6325 3375 6325
+$Comp
+L Device:R R?
+U 1 1 60800686
+P 3375 6575
+F 0 "R?" H 3445 6621 50  0000 L CNN
+F 1 "R" H 3445 6530 50  0000 L CNN
+F 2 "" V 3305 6575 50  0001 C CNN
+F 3 "~" H 3375 6575 50  0001 C CNN
+	1    3375 6575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3375 6425 3375 6325
+Connection ~ 3375 6325
+Wire Wire Line
+	3375 6325 3650 6325
+$Comp
+L Device:R R?
+U 1 1 6080730C
+P 3375 6975
+F 0 "R?" H 3445 7021 50  0000 L CNN
+F 1 "R" H 3445 6930 50  0000 L CNN
+F 2 "" V 3305 6975 50  0001 C CNN
+F 3 "~" H 3375 6975 50  0001 C CNN
+	1    3375 6975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3375 6825 3375 6750
+Wire Wire Line
+	3375 7125 3375 7225
+Text Label 3375 7225 3    50   ~ 0
+GND
+Wire Wire Line
+	3375 6750 3275 6750
+Connection ~ 3375 6750
+Wire Wire Line
+	3375 6750 3375 6725
+Text Label 3275 6750 2    50   ~ 0
+V_METER
+$Comp
+L mouse_v2-rescue:Q_NMOS_DGS-Device T?
+U 1 1 6082105F
+P 950 6875
+F 0 "T?" H 1155 6921 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 1155 6830 50  0000 L CNN
+F 2 "misc:TN0104(TO-92)v2" H 1150 6975 50  0001 C CNN
+F 3 "~" H 950 6875 50  0001 C CNN
+	1    950  6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L mouse_v2-rescue:R-Device R?
+U 1 1 60824B4F
+P 725 7175
+F 0 "R?" V 518 7175 50  0000 C CNN
+F 1 "47k" V 609 7175 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 655 7175 50  0001 C CNN
+F 3 "~" H 725 7175 50  0001 C CNN
+	1    725  7175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	750  6875 725  6875
+Wire Wire Line
+	575  6875 575  7025
+Wire Wire Line
+	1050 7075 1050 7400
+Wire Wire Line
+	725  7325 725  7400
+Wire Wire Line
+	725  7400 1050 7400
+Wire Wire Line
+	1050 7400 1050 7550
+Connection ~ 1050 7400
+Wire Wire Line
+	725  7025 725  6875
+Connection ~ 725  6875
+Wire Wire Line
+	725  6875 575  6875
+Text Label 800  6175 2    50   ~ 0
+5v
+$Comp
+L Device:R R?
+U 1 1 60880200
+P 1050 6525
+F 0 "R?" H 1120 6571 50  0000 L CNN
+F 1 "R" H 1120 6480 50  0000 L CNN
+F 2 "" V 980 6525 50  0001 C CNN
+F 3 "~" H 1050 6525 50  0001 C CNN
+	1    1050 6525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6175 800  6175
 $EndSCHEMATC
