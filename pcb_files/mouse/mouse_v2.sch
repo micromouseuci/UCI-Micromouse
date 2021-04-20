@@ -368,8 +368,6 @@ Text Label 7600 1725 2    50   ~ 0
 M2_forward
 Text Label 7600 1925 2    50   ~ 0
 M2_backward
-Text Label 8225 4350 0    50   ~ 0
-3.3v
 Text Label 7475 4350 2    50   ~ 0
 GND
 Text Label 4525 7725 0    50   ~ 0
@@ -378,8 +376,6 @@ Text Label 4525 7625 0    50   ~ 0
 GND
 Text Label 8350 4225 0    50   ~ 0
 PUSH_SW
-Wire Wire Line
-	8225 4350 8100 4350
 Wire Wire Line
 	8100 4350 8100 4225
 Text Label 7600 3225 2    50   ~ 0
@@ -397,7 +393,6 @@ Text Label 7600 3025 2    50   ~ 0
 PUSH_SW
 Text Label 7600 925  2    50   ~ 0
 GND
-NoConn ~ 9800 2225
 NoConn ~ 9800 2125
 NoConn ~ 9800 2025
 NoConn ~ 9800 1925
@@ -804,7 +799,7 @@ U 1 1 5E799FC8
 P 2000 5550
 F 0 "SK1" H 2100 5596 50  0000 L CNN
 F 1 "M3" H 2100 5505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 5550 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2000 5550 50  0001 C CNN
 F 3 "~" H 2000 5550 50  0001 C CNN
 	1    2000 5550
 	1    0    0    -1  
@@ -815,7 +810,7 @@ U 1 1 5E79A0A3
 P 1175 5575
 F 0 "MH2" H 1275 5621 50  0000 L CNN
 F 1 "M3" H 1275 5530 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1175 5575 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 1175 5575 50  0001 C CNN
 F 3 "~" H 1175 5575 50  0001 C CNN
 	1    1175 5575
 	1    0    0    -1  
@@ -826,7 +821,7 @@ U 1 1 5E79A15B
 P 1175 5175
 F 0 "MH1" H 1275 5221 50  0000 L CNN
 F 1 "M3" H 1275 5130 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1175 5175 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 1175 5175 50  0001 C CNN
 F 3 "~" H 1175 5175 50  0001 C CNN
 	1    1175 5175
 	1    0    0    -1  
@@ -837,7 +832,7 @@ U 1 1 5E79A200
 P 2000 5175
 F 0 "SK2" H 2100 5221 50  0000 L CNN
 F 1 "M3" H 2100 5130 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 5175 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2000 5175 50  0001 C CNN
 F 3 "~" H 2000 5175 50  0001 C CNN
 	1    2000 5175
 	1    0    0    -1  
@@ -937,7 +932,6 @@ Wire Wire Line
 	7450 4350 7600 4350
 Wire Wire Line
 	8000 4350 8100 4350
-Connection ~ 8100 4350
 Text Label 5775 5725 2    50   ~ 0
 VUSB
 Wire Wire Line
@@ -976,7 +970,7 @@ U 1 1 5F361454
 P 2150 6300
 F 0 "D4" H 2141 6516 50  0000 C CNN
 F 1 "LED" H 2141 6425 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 2150 6300 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2150 6300 50  0001 C CNN
 F 3 "~" H 2150 6300 50  0001 C CNN
 	1    2150 6300
 	1    0    0    -1  
@@ -987,7 +981,7 @@ U 1 1 5F367A92
 P 2425 6550
 F 0 "R19" H 2495 6596 50  0000 L CNN
 F 1 "R" H 2495 6505 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2355 6550 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2355 6550 50  0001 C CNN
 F 3 "~" H 2425 6550 50  0001 C CNN
 	1    2425 6550
 	1    0    0    -1  
@@ -1006,7 +1000,7 @@ U 1 1 5F396452
 P 2150 6825
 F 0 "D5" H 2141 7041 50  0000 C CNN
 F 1 "LED" H 2141 6950 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 2150 6825 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2150 6825 50  0001 C CNN
 F 3 "~" H 2150 6825 50  0001 C CNN
 	1    2150 6825
 	1    0    0    -1  
@@ -1017,7 +1011,7 @@ U 1 1 5F396459
 P 2425 7075
 F 0 "R20" H 2495 7121 50  0000 L CNN
 F 1 "R" H 2495 7030 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2355 7075 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2355 7075 50  0001 C CNN
 F 3 "~" H 2425 7075 50  0001 C CNN
 	1    2425 7075
 	1    0    0    -1  
@@ -1032,7 +1026,7 @@ U 1 1 5F399A50
 P 2150 7350
 F 0 "D6" H 2141 7566 50  0000 C CNN
 F 1 "LED" H 2141 7475 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 2150 7350 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2150 7350 50  0001 C CNN
 F 3 "~" H 2150 7350 50  0001 C CNN
 	1    2150 7350
 	1    0    0    -1  
@@ -1043,7 +1037,7 @@ U 1 1 5F399A57
 P 2425 7600
 F 0 "R21" H 2495 7646 50  0000 L CNN
 F 1 "R" H 2495 7555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2355 7600 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2355 7600 50  0001 C CNN
 F 3 "~" H 2425 7600 50  0001 C CNN
 	1    2425 7600
 	1    0    0    -1  
@@ -1183,7 +1177,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 6650 8200 6650
 Text Label 8200 6350 0    50   ~ 0
-VCC
+5v
 Text Label 8200 6450 0    50   ~ 0
 GND
 Text Label 8200 6550 0    50   ~ 0
@@ -1226,12 +1220,12 @@ NoConn ~ 9800 2525
 Wire Wire Line
 	3200 6325 3375 6325
 $Comp
-L Device:R R?
+L Device:R R22
 U 1 1 60800686
 P 3375 6575
-F 0 "R?" H 3445 6621 50  0000 L CNN
+F 0 "R22" H 3445 6621 50  0000 L CNN
 F 1 "R" H 3445 6530 50  0000 L CNN
-F 2 "" V 3305 6575 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3305 6575 50  0001 C CNN
 F 3 "~" H 3375 6575 50  0001 C CNN
 	1    3375 6575
 	1    0    0    -1  
@@ -1242,12 +1236,12 @@ Connection ~ 3375 6325
 Wire Wire Line
 	3375 6325 3650 6325
 $Comp
-L Device:R R?
+L Device:R R23
 U 1 1 6080730C
 P 3375 6975
-F 0 "R?" H 3445 7021 50  0000 L CNN
+F 0 "R23" H 3445 7021 50  0000 L CNN
 F 1 "R" H 3445 6930 50  0000 L CNN
-F 2 "" V 3305 6975 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3305 6975 50  0001 C CNN
 F 3 "~" H 3375 6975 50  0001 C CNN
 	1    3375 6975
 	1    0    0    -1  
@@ -1266,10 +1260,10 @@ Wire Wire Line
 Text Label 3275 6750 2    50   ~ 0
 V_METER
 $Comp
-L mouse_v2-rescue:Q_NMOS_DGS-Device T?
+L mouse_v2-rescue:Q_NMOS_DGS-Device T4
 U 1 1 6082105F
 P 950 6875
-F 0 "T?" H 1155 6921 50  0000 L CNN
+F 0 "T4" H 1155 6921 50  0000 L CNN
 F 1 "Q_NMOS_DGS" H 1155 6830 50  0000 L CNN
 F 2 "misc:TN0104(TO-92)v2" H 1150 6975 50  0001 C CNN
 F 3 "~" H 950 6875 50  0001 C CNN
@@ -1277,10 +1271,10 @@ F 3 "~" H 950 6875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mouse_v2-rescue:R-Device R?
+L mouse_v2-rescue:R-Device R17
 U 1 1 60824B4F
 P 725 7175
-F 0 "R?" V 518 7175 50  0000 C CNN
+F 0 "R17" V 518 7175 50  0000 C CNN
 F 1 "47k" V 609 7175 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 655 7175 50  0001 C CNN
 F 3 "~" H 725 7175 50  0001 C CNN
@@ -1308,12 +1302,12 @@ Wire Wire Line
 Text Label 800  6175 2    50   ~ 0
 5v
 $Comp
-L Device:R R?
+L Device:R R18
 U 1 1 60880200
 P 1050 6525
-F 0 "R?" H 1120 6571 50  0000 L CNN
+F 0 "R18" H 1120 6571 50  0000 L CNN
 F 1 "R" H 1120 6480 50  0000 L CNN
-F 2 "" V 980 6525 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 980 6525 50  0001 C CNN
 F 3 "~" H 1050 6525 50  0001 C CNN
 	1    1050 6525
 	1    0    0    -1  
@@ -1326,7 +1320,7 @@ U 1 1 6089E032
 P 2425 5175
 F 0 "SK3" H 2525 5221 50  0000 L CNN
 F 1 "M3" H 2525 5130 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2425 5175 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2425 5175 50  0001 C CNN
 F 3 "~" H 2425 5175 50  0001 C CNN
 	1    2425 5175
 	1    0    0    -1  
@@ -1337,9 +1331,11 @@ U 1 1 6089E685
 P 2450 5550
 F 0 "SK4" H 2550 5596 50  0000 L CNN
 F 1 "M3" H 2550 5505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2450 5550 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2450 5550 50  0001 C CNN
 F 3 "~" H 2450 5550 50  0001 C CNN
 	1    2450 5550
 	1    0    0    -1  
 $EndComp
+Text Label 9800 2225 0    50   ~ 0
+V_METER
 $EndSCHEMATC
