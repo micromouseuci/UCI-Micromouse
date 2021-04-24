@@ -1179,7 +1179,6 @@ Text Label 8200 6550 0    50   ~ 0
 HC05_TX
 Text Label 8200 6650 0    50   ~ 0
 HC05_RX
-NoConn ~ 7800 6250
 NoConn ~ 7800 6750
 Wire Notes Line
 	500  8100 10500 8100
@@ -1363,4 +1362,27 @@ Text Label 7450 4675 2    50   ~ 0
 GND
 Text Label 7600 2025 2    50   ~ 0
 PUSH_SW2
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 608D00EC
+P 7575 5625
+F 0 "J?" H 7683 5806 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 7683 5715 50  0000 C CNN
+F 2 "" H 7575 5625 50  0001 C CNN
+F 3 "~" H 7575 5625 50  0001 C CNN
+	1    7575 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 6250 8200 6250
+Text Label 8200 6250 0    50   ~ 0
+HC05_KEY
+Wire Wire Line
+	7775 5725 8225 5725
+Wire Wire Line
+	7775 5625 8225 5625
+Text Label 8225 5625 0    50   ~ 0
+HC05_KEY
+Text Label 8225 5725 0    50   ~ 0
+GND
 $EndSCHEMATC
