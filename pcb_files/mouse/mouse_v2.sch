@@ -356,7 +356,7 @@ Text Label 9800 3625 0    50   ~ 0
 Emitter_0
 Text Label 7600 3625 2    50   ~ 0
 Emitter_1
-Text Label 7600 2825 2    50   ~ 0
+Text Label 7600 3025 2    50   ~ 0
 Emitter_2
 Text Label 7600 3325 2    50   ~ 0
 Emitter_3
@@ -374,10 +374,8 @@ Text Label 4525 7725 0    50   ~ 0
 vBatt
 Text Label 4525 7625 0    50   ~ 0
 GND
-Text Label 8350 4225 0    50   ~ 0
+Text Label 8100 4350 0    50   ~ 0
 PUSH_SW
-Wire Wire Line
-	8100 4350 8100 4225
 Text Label 7600 3225 2    50   ~ 0
 M1_encoder_A
 Text Label 7600 3125 2    50   ~ 0
@@ -389,7 +387,7 @@ M2_encoder_B
 NoConn ~ 9800 1025
 NoConn ~ 9800 1125
 NoConn ~ 9800 1225
-Text Label 7600 3025 2    50   ~ 0
+Text Label 7600 2825 2    50   ~ 0
 PUSH_SW
 Text Label 7600 925  2    50   ~ 0
 GND
@@ -901,7 +899,6 @@ Wire Notes Line
 	2900 8100 2900 4950
 Wire Notes Line
 	500  4950 6800 4950
-NoConn ~ 7600 2025
 Wire Notes Line
 	6800 500  6800 11200
 Text Notes 10400 5000 2    79   ~ 0
@@ -1139,8 +1136,6 @@ Wire Wire Line
 Connection ~ 4125 5675
 Wire Wire Line
 	4125 5675 4600 5675
-Wire Wire Line
-	8350 4225 8100 4225
 $Comp
 L Device:CP1_Small C4
 U 1 1 5F6B2E72
@@ -1184,7 +1179,6 @@ Text Label 8200 6550 0    50   ~ 0
 HC05_TX
 Text Label 8200 6650 0    50   ~ 0
 HC05_RX
-NoConn ~ 7800 6250
 NoConn ~ 7800 6750
 Wire Notes Line
 	500  8100 10500 8100
@@ -1338,4 +1332,57 @@ F 3 "~" H 2450 5550 50  0001 C CNN
 $EndComp
 Text Label 9800 2225 0    50   ~ 0
 V_METER
+$Comp
+L mouse_v2-rescue:GPTS203211B-dk_Pushbutton-Switches S3
+U 1 1 608921B4
+P 7800 4675
+F 0 "S3" H 7800 4950 50  0000 C CNN
+F 1 "GPTS203211B" H 7800 4859 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 8000 4875 50  0001 L CNN
+F 3 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 8000 4975 60  0001 L CNN
+F 4 "CW181-ND" H 8000 5075 60  0001 L CNN "Digi-Key_PN"
+F 5 "GPTS203211B" H 8000 5175 60  0001 L CNN "MPN"
+F 6 "Switches" H 8000 5275 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 8000 5375 60  0001 L CNN "Family"
+F 8 "http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf" H 8000 5475 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cw-industries/GPTS203211B/CW181-ND/3190590" H 8000 5575 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSHBUTTON SPST 1A 30V" H 8000 5675 60  0001 L CNN "Description"
+F 11 "CW Industries" H 8000 5775 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8000 5875 60  0001 L CNN "Status"
+	1    7800 4675
+	1    0    0    -1  
+$EndComp
+Text Label 8125 4675 0    50   ~ 0
+PUSH_SW2
+Wire Wire Line
+	8125 4675 8000 4675
+Wire Wire Line
+	7600 4675 7450 4675
+Text Label 7450 4675 2    50   ~ 0
+GND
+Text Label 7600 2025 2    50   ~ 0
+PUSH_SW2
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 608D00EC
+P 7575 5625
+F 0 "J3" H 7683 5806 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 7683 5715 50  0000 C CNN
+F 2 "" H 7575 5625 50  0001 C CNN
+F 3 "~" H 7575 5625 50  0001 C CNN
+	1    7575 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 6250 8200 6250
+Text Label 8200 6250 0    50   ~ 0
+HC05_KEY
+Wire Wire Line
+	7775 5725 8225 5725
+Wire Wire Line
+	7775 5625 8225 5625
+Text Label 8225 5625 0    50   ~ 0
+HC05_KEY
+Text Label 8225 5725 0    50   ~ 0
+GND
 $EndSCHEMATC
