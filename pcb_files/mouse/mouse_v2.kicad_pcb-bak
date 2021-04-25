@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 61)
-    (tracks 654)
+    (tracks 653)
     (zones 0)
     (modules 66)
     (nets 70)
@@ -1697,8 +1697,8 @@
     )
   )
 
-  (module LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm (layer F.Cu) (tedit 5880A862) (tstamp 5E8579A4)
-    (at 130.2258 128.125605)
+  (module LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm (layer F.Cu) (tedit 5880A862) (tstamp 6084B88B)
+    (at 127.1778 126.9238)
     (descr "LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins")
     (tags "LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins")
     (path /5D1CECF5)
@@ -2086,7 +2086,7 @@
   )
 
   (module LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm (layer F.Cu) (tedit 5880A862) (tstamp 5E857656)
-    (at 190.5 126.0856)
+    (at 190.4492 127.0508)
     (descr "LED, diameter 3.0mm z-position of LED center 2.0mm, 2 pins, diameter 3.0mm z-position of LED center 2.0mm, 2 pins")
     (tags "LED diameter 3.0mm z-position of LED center 2.0mm 2 pins diameter 3.0mm z-position of LED center 2.0mm 2 pins")
     (path /5D1CEBFF)
@@ -3508,7 +3508,6 @@
   (via (at 196.85 118.364) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (via (at 197.104 119.634) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 19))
   (via (at 198.12 118.618) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
-  (via (at 196.088 120.65) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 33))
   (via (at 127.9398 110.236) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (via (at 129.0066 110.236) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (via (at 130.0988 110.236) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
