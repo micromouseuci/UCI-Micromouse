@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name mouse_v2-cache)(type Legacy)(uri C:/Users/sotan/OneDrive/Documents/GitHub/UCI-Micromouse/pcb_files/mouse/mouse_v2-cache.lib)(options "")(descr ""))
+  (lib (name HC-05)(type Legacy)(uri ${KIPRJMOD}/HC-05.lib)(options "")(descr ""))
+)
