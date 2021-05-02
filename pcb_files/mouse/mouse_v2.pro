@@ -1,4 +1,4 @@
-update=4/25/2021 1:37:08 AM
+update=5/2/2021 12:35:35 AM
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=mouse3.net
+LastNetListRead=mouse4.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

@@ -1363,12 +1363,12 @@ GND
 Text Label 7600 2025 2    50   ~ 0
 PUSH_SW2
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J3
 U 1 1 608D00EC
 P 7575 5625
-F 0 "J?" H 7683 5806 50  0000 C CNN
+F 0 "J3" H 7683 5806 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 7683 5715 50  0000 C CNN
-F 2 "" H 7575 5625 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7575 5625 50  0001 C CNN
 F 3 "~" H 7575 5625 50  0001 C CNN
 	1    7575 5625
 	1    0    0    -1  
