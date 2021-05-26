@@ -23,11 +23,6 @@
 #define M2_ENC_A_PIN 1
 #define M2_ENC_B_PIN 0
 
-unsigned int enc_a_l_count = 0;
-unsigned int enc_b_l_count = 0;
-unsigned int enc_a_r_count = 0;
-unsigned int enc_b_r_count = 0;
-
 #define BUZZ_PIN 2
 #define SW_1_PIN 13
 
@@ -35,11 +30,15 @@ unsigned int enc_b_r_count = 0;
 #define LED2_PIN 3
 #define LED3_PIN 4
 #define SW_2_PIN 10
-#define VOL_METER 26//originally hooked up to 30, but 30 not an analog pin, so hotwired to 26
+#define VOL_METER 26//originally hooked up to 30, but 30 not an analog pin, so handwired to 26
 
 #define HC05_RX 29
 #define HC05_TX 28
-//#define RGB_DATA_PIN 10
+
+unsigned int enc_a_l_count = 0;
+unsigned int enc_b_l_count = 0;
+unsigned int enc_a_r_count = 0;
+unsigned int enc_b_r_count = 0;
 
 enum Direction {
   FORWARDS = 0, BACKWARDS = 1, STOP = 2
@@ -69,7 +68,7 @@ void enc_b_r_intr_handler() {
   //Serial.println(enc_b_r_count);
 }
 
-void sw_2_handler(){
+void sw_2_handler() {
   //while(!read_sw_2()) delay(100);
   Serial.println("here");
   delay(2000);
@@ -79,7 +78,8 @@ void sw_2_handler(){
 
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(9600);             //USB serial
+  Serial7.begin(9600);            //Bluetooth module
   pinMode(EMIT_L_PIN, OUTPUT);
   pinMode(EMIT_R_PIN, OUTPUT);
   pinMode(EMIT_FL_PIN, OUTPUT);
@@ -93,20 +93,19 @@ void setup() {
   pinMode(M1_BACK_PIN, OUTPUT);
   pinMode(M1_FWD_PIN, OUTPUT);
   pinMode(M1_SPD_PIN, OUTPUT);
-  pinMode(M1_ENC_A_PIN, INPUT); //check if input pullup
+  pinMode(M1_ENC_A_PIN, INPUT);     //check if input pullup
   pinMode(M1_ENC_B_PIN, INPUT);
 
   pinMode(M2_BACK_PIN, OUTPUT);
   pinMode(M2_FWD_PIN, OUTPUT);
   pinMode(M2_SPD_PIN, OUTPUT);
-  pinMode(M2_ENC_A_PIN, INPUT); //check if input pullup
+  pinMode(M2_ENC_A_PIN, INPUT);     //check if input pullup
   pinMode(M2_ENC_B_PIN, INPUT);
 
   pinMode(BUZZ_PIN, OUTPUT);
   pinMode(SW_1_PIN, INPUT_PULLUP);
   pinMode(SW_2_PIN, INPUT_PULLUP);
   pinMode(VOL_METER, INPUT);
-  //pinMode(RGB_DATA_PIN, OUTPUT);
 
   analogWriteFrequency(M1_BACK_PIN, 488.28);
   analogWriteFrequency(M1_FWD_PIN, 488.28);
@@ -114,7 +113,6 @@ void setup() {
   analogWriteFrequency(M2_BACK_PIN, 488.28);
   analogWriteFrequency(M2_FWD_PIN, 488.28);
   analogWriteFrequency(M2_SPD_PIN, 488.28);
-  
   analogWriteFrequency(BUZZ_PIN, 488.28);
 
   //Interrupts
@@ -122,8 +120,8 @@ void setup() {
   attachInterrupt(M2_ENC_B_PIN, enc_b_l_intr_handler, FALLING);
   attachInterrupt(M1_ENC_A_PIN, enc_a_r_intr_handler, FALLING);
   attachInterrupt(M1_ENC_B_PIN, enc_b_r_intr_handler, FALLING);
-
   attachInterrupt(SW_2_PIN, sw_2_handler, FALLING);
+
   delay(2000);
 }
 
@@ -165,28 +163,28 @@ int get_dist_fl() {
   return dist;
 }
 
-void turn_all_emit_on(){
+void turn_all_emit_on() {
   digitalWrite(EMIT_FL_PIN, HIGH);
   digitalWrite(EMIT_FR_PIN, HIGH);
   digitalWrite(EMIT_R_PIN, HIGH);
   digitalWrite(EMIT_L_PIN, HIGH);
 }
 
-void turn_all_emit_off(){
+void turn_all_emit_off() {
   digitalWrite(EMIT_FL_PIN, LOW);
   digitalWrite(EMIT_FR_PIN, LOW);
   digitalWrite(EMIT_R_PIN, LOW);
   digitalWrite(EMIT_L_PIN, LOW);
 }
 
-void turn_all_led_on(){
+void turn_all_led_on() {
   digitalWrite(LED1_PIN, HIGH);
   digitalWrite(LED2_PIN, HIGH);
   digitalWrite(LED3_PIN, HIGH);
 }
 
 
-void turn_all_led_off(){
+void turn_all_led_off() {
   digitalWrite(LED1_PIN, LOW);
   digitalWrite(LED2_PIN, LOW);
   digitalWrite(LED3_PIN, LOW);
@@ -281,9 +279,6 @@ void set_motor_r_pulse_dir(int dir, int mspeed) {
   }
 }
 
-
-
-
 void rst_enc_a_l_count() {
   enc_a_l_count = 0;
 }
@@ -301,61 +296,66 @@ void rst_enc_b_r_count() {
 }
 
 
-void set_buzzer_on(){
-  tone(BUZZ_PIN, 2000);
+void set_buzzer_on(int freq) {
+  tone(BUZZ_PIN, freq);
   //analogWrite(BUZZ_PIN, 2);
   //draws about 0.8ma
   //foroums say limit teensy pins to 1-4ma
 }
 
-void set_buzzer_off(){
+void set_buzzer_off() {
   tone(BUZZ_PIN, 0);
 }
 
-int read_sw_1(){
+void bt_write(String s) {
+  Serial7.println(s);
+}
+
+int read_sw_1() {
   return digitalRead(SW_1_PIN);
 }
 
-int read_sw_2(){
+int read_sw_2() {
   return digitalRead(SW_2_PIN);
 }
 
-int read_battery(){
+int read_battery() {
   return analogRead(VOL_METER);
 }
 
-void red_led_on(){
+void red_led_on() {
   digitalWrite(LED3_PIN, HIGH);
 }
 
-void red_led_off(){
+void red_led_off() {
   digitalWrite(LED3_PIN, LOW);
 }
 
-void green_led_on(){
+void green_led_on() {
   digitalWrite(LED2_PIN, HIGH);
 }
 
-void green_led_off(){
+void green_led_off() {
   digitalWrite(LED2_PIN, LOW);
 }
 
-void yellow_led_on(){
+void yellow_led_on() {
   digitalWrite(LED1_PIN, HIGH);
 }
 
-void yellow_led_off(){
+void yellow_led_off() {
   digitalWrite(LED1_PIN, LOW);
 }
+
 
 //no resistance, battery full charge
 //160 measures about 6v
 //150 measure about 6v
 //140 measure about 5.9v
 
-//reccomend 
+//reccomend
 
-//Ran with motor limit 140, 
+//Ran with motor limit 140,
 //with motors maxed out, all emitters on, all leds on, (buzzer off), no resistance at wheels. it drew about 0.9A.
 
 
@@ -365,15 +365,21 @@ void yellow_led_off(){
 #define PID_POLLING_DELAY 15
 #define MOTOR_SWITCH_DIR_DELAY 0
 
+//Need to test buzzer
+int buzz_freq;
 int last_spd;
 void loop() {
-  /*
+  bt_write("Start Part 1");
+  yellow_led_on();
+  red_led_on();
+  green_led_on();
   //turn_all_emit_on();
   //turn_all_led_on();
   //0 == fwd, 1 = back 2 = stop
   //move forward for 2 seconds
   set_motor_l(0, UPPER_MOTOR_LIMIT);
   set_motor_r(0, UPPER_MOTOR_LIMIT);
+  //set_buzzer_on(500);
   delay(5000);
   //stop motors briefly
   set_motor_l(2, 0);
@@ -382,6 +388,7 @@ void loop() {
   //move motors backwards for 2 seconds
   set_motor_l(1, UPPER_MOTOR_LIMIT);
   set_motor_r(1, UPPER_MOTOR_LIMIT);
+  //set_buzzer_on(1000);
   delay(5000);
   //stop motors briefly
   set_motor_l(2, 0);
@@ -390,6 +397,7 @@ void loop() {
   //turn left for 2 seconds
   set_motor_l(1, UPPER_MOTOR_LIMIT);
   set_motor_r(0, UPPER_MOTOR_LIMIT);
+  //set_buzzer_on(2000);
   delay(5000);
   //stop motors briefly
   set_motor_l(2, 0);
@@ -398,15 +406,21 @@ void loop() {
   //turn right for 2 seconds
   set_motor_l(0, UPPER_MOTOR_LIMIT);
   set_motor_r(1, UPPER_MOTOR_LIMIT);
+  //set_buzzer_on(5000);
   delay(5000);
   //stop motors briefly
   set_motor_l(2, 0);
   set_motor_r(2, 0);
   delay(MOTOR_SWITCH_DIR_DELAY);
+  bt_write("Start Part 2");
   //Test incrementing/decrementing motor speeds
   //increment the motor speed from 0 to UPPER_MOTOR_LIMIT, then decrement it to 0
-  //turn_all_emit_off();
-  //turn_all_led_off();
+  turn_all_emit_off();
+  turn_all_led_off();
+  yellow_led_off();
+  red_led_off();
+  green_led_off();
+  set_buzzer_off();
   last_spd = 0;
   for (int i = 0; i < 5; i ++) { //repeat the sequence below 5 times
     //increment speed by 1
@@ -415,6 +429,7 @@ void loop() {
       set_motor_r(0, last_spd);
       get_dist_r();
       get_dist_l();
+      //set_buzzer_on(7000);
       delay(PID_POLLING_DELAY);
     }
     //decrement speed by 1
@@ -423,6 +438,7 @@ void loop() {
       set_motor_r(0, last_spd);
       get_dist_r();
       get_dist_l();
+      //set_buzzer_on(10000);
       delay(PID_POLLING_DELAY);
     }
     //increment speed by 3
@@ -431,6 +447,7 @@ void loop() {
       set_motor_r(0, last_spd);
       get_dist_r();
       get_dist_l();
+      //set_buzzer_on(12000);
       delay(PID_POLLING_DELAY);
     }
     //decrement speed by 3
@@ -439,6 +456,7 @@ void loop() {
       set_motor_r(0, last_spd);
       get_dist_r();
       get_dist_l();
+      //set_buzzer_on(15000);
       delay(PID_POLLING_DELAY);
     }
     //increment speed by 7
@@ -477,30 +495,18 @@ void loop() {
 
   set_motor_l(2, 0);
   set_motor_r(2, 0);
-*/
-  green_led_on();
-  delay(250);
-  green_led_off();
-  delay(250);
 
-  red_led_on();
-  delay(250);
-  red_led_off();
-  delay(250);
+  bt_write("Vol meter: ");
+  bt_write(read_battery());
 
-  yellow_led_on();
-  delay(250);
-  yellow_led_off();
-  delay(250);
-  Serial.println("running...");
 
   //Serial.println(get_dist_l());
 
   //Serial.println(get_dist_r());
-  
- 
- //Serial.println(get_dist_fr());
-  
+
+
+  //Serial.println(get_dist_fr());
+
   //Serial.println(get_dist_fl());
   //set_buzzer_on();
   //Serial.println(read_battery());
